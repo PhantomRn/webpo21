@@ -1,82 +1,437 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-us">
   <head>
     <title>POISE UGM 2021</title>
     <meta charset="utf-8">
     <meta name="description" content="POISE (Process Engineering Series of Events) is an international annual event held by Keluarga Mahasiswa Teknik Kimia (KMTK) Universitas Gadjah Mada">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="frameworks/bootstrap/css/bootstrap.css">
-    <script src="frameworks/bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="styles/home-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/down.js" defer></script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="images/favicon.png" alt="" width="48" height="48">
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-dark is-fixed-top" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="images/poiselogo.png" alt="POISE">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Events
+        <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDrop">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="navbar-menu" id="navbarDrop">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item is-active" href="#">
+            Home
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Events
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item has-text-dark" href="#">
+                GTS
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">GTS</a></li>
-                <li><a class="dropdown-item" href="#">POISETalks</a></li>
-                <li><a class="dropdown-item" href="#">POISEChats</a></li>
-                <li><a class="dropdown-item" href="#">Charity</a></li>
-                <li><a class="dropdown-item" href="#">Wafers</a></li>
-                <li><a class="dropdown-item" href="#">Summit</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Competitions
+              <a class="navbar-item has-text-dark" href="#">
+                POISETalks
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">PHASE</a></li>
-                <li><a class="dropdown-item" href="#">PSICO</a></li>
-                <li><a class="dropdown-item" href="#">SAFECOM</a></li>
-                <li><a class="dropdown-item" href="#">CATALYST</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href"#">Contact</a>
-            </li>
-          </ul>
+              <a class="navbar-item has-text-dark" href="#">
+                POISEChats
+              </a>
+              <a class="navbar-item has-text-dark" href="#">
+                Charity
+              </a>
+              <a class="navbar-item has-text-dark" href="#">
+                WAFERS
+              </a>
+              <a class="navbar-item has-text-dark" href="#">
+                Summit
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Competition
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item has-text-dark" href="#">
+                PHASE
+              </a>
+              <a class="navbar-item has-text-dark" href="#">
+                PSICO
+              </a>
+              <a class="navbar-item has-text-dark" href="#">
+                SAFECOM
+              </a>
+              <a class="navbar-item has-text-dark" href="#">
+                CATALYST
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" href="#footer">
+            Contact
+          </a>
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row pt-5 justify-content-md-center align-items-center">
-        <div class="col-md-auto">
-          <h1>POISE UGM</h1>
+    <section class="hero is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="is-size-1 has-text-dark is-family-secondary has-text-weight-black ">
+            POISE UGM
+          </h1>
+          <h2 class="is-size-5 has-text-dark has-text-weight-bold">
+            Process Engineering Series of Events
+          </h2>
+          <h1 class="is-size-1 has-text-dark is-family-secondary has-text-weight-bold">
+            2021
+          </h1>
         </div>
       </div>
-      <div class="row gy-5 justify-content-md-center align-items-center">
-        <div class="col-md-auto">
-          <p>Process Engineering Series of Events</p>
+    </section>
+    <section class="section is-small has-background-dark">
+      <div class="columns is-vcentered px-3 is-centered">
+        <div class="column is-one-quarter">
+          <figure class="image is-square">
+            <img src="images/poiselogo.png" alt="POISE">
+          </figure>
+        </div>
+        <div class="column is-two-fifths">
+          <h1 class="is-size-2 has-text-light has-text-weight-medium pb-0 mb-0">
+            About
+          </h1>
+          <h1 class="is-size-2 has-text-warning has-text-weight-bold mt-0 pt-0">
+            POISE UGM
+          </h1>
+          <p class="has-text-light">
+              Process Engineering Series of Events or POISE is an international annual event held by Keluarga Mahasiswa Teknik Kimia (KMTK) Universitas Gadjah Mada. POISE is a combination of previous events in KMTK, Safecom and PIT. Safecom was meant to build awareness about the importance of safety, while PIT was meant to raise issues in the world of petrochemical, geothermal, oil, and gas. POISE is a platform for future leaders to compete in developing creative and innovative ideas and hone critical thinking to answer sustainable problems.
+          </p>
         </div>
       </div>
-      <div class="row justify-content-md-center align-items-center">
-        <div class="col-md-auto">
-          <h1>2021</h1>
+    </section>
+    <section class="section is-medium has-background-light">
+      <div class="container has-text-centered has-text-dark">
+        <h1 class="title is-1 has-text-dark is-family-secondary has-text-weight-black">
+          POISE UGM 2021
+        </h1>
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <figure class="image is-3by2">
+              <img src="images/sect0bg.png" alt="4 Competitions & 6 Events">
+            </figure>
+          </div>
         </div>
+        <h2 class="is-size-2 has-text-dark has-text-weight-bold">
+          Grand Theme
+        </h2>
+        <h3 class="is-size-4 has-text-dark has-text-weight-bold">
+          Enhancing Professional Youth Towards Safe and
+          <br>
+          Green Industry Culture for Sustainable Future
+        </h3>
       </div>
-      <div class="row justify-content-md-center align-items-end">
-        <div class="col-md-auto">
-          <h1>&#748;</h1>
-        </div>
-      </div>
+    </section>
 
-
-    </div>
-
+    <section class="section is-medium has-background-dark">
+      <h1 class="is-size-2 has-text-centered has-text-light has-text-weight-bold">
+        Competitions
+      </h1>
+      <div class="columns is-centered my-6">
+        <div class="column is-5">
+          <div class="card has-background-light">
+            <div class="card-content">
+              <div class="columns is-vcentered">
+                <div class="column is-3">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/phase.png" alt="PHASE">
+                  </figure>
+                </div>
+                <div class="column is-offset-1">
+                  <p class="is-size-2 has-text-dark has-text-weight-bold is-italic">
+                    PHASE
+                  </p>
+                  <p class="has-text-dark has-text-weight-light">
+                    Poster Challenge for Decent Engineer
+                  </p>
+                  <br>
+                  <br>
+                  <a class="button is-dark is-rounded is-small has-text-weight-bold">See more &#10148;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 is-offset-1">
+          <div class="card has-background-light">
+            <div class="card-content">
+              <div class="columns is-vcentered">
+                <div class="column is-3">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/psico.png" alt="PSICO">
+                  </figure>
+                </div>
+                <div class="column is-offset-1">
+                  <p class="is-size-2 has-text-dark has-text-weight-bold is-italic">
+                    PSICO
+                  </p>
+                  <p class="has-text-dark has-text-weight-light">
+                    Process Simulation Competition
+                  </p>
+                  <br>
+                  <br>
+                  <a class="button is-dark is-rounded is-small has-text-weight-bold">See more &#10148;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered my-6">
+        <div class="column is-5">
+          <div class="card has-background-light">
+            <div class="card-content">
+              <div class="columns is-vcentered">
+                <div class="column is-3">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/safecom.png" alt="SAFECOM">
+                  </figure>
+                </div>
+                <div class="column is-offset-1">
+                  <p class="is-size-2 has-text-dark has-text-weight-bold is-italic">
+                    SAFECOM
+                  </p>
+                  <p class="has-text-dark has-text-weight-light">
+                    Safety Competition
+                  </p>
+                  <br>
+                  <br>
+                  <a class="button is-dark is-rounded is-small has-text-weight-bold">See more &#10148;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 is-offset-1">
+          <div class="card has-background-light">
+            <div class="card-content">
+              <div class="columns is-vcentered">
+                <div class="column is-3">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/catalyst.png" alt="CATALYST">
+                  </figure>
+                </div>
+                <div class="column is-offset-1">
+                  <p class="is-size-2 has-text-dark has-text-weight-bold is-italic">
+                    CATALYST
+                  </p>
+                  <p class="has-text-dark has-text-weight-light">
+                      Chemical Engineering Challenge on Applied Science and Mathematics
+                      <br>
+                      <br>
+                  </p>
+                  <a class="button is-dark is-rounded is-small has-text-weight-bold">See more &#10148;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section is-large has-background-light">
+      <div class="container">
+        <h1 class="is-size-2 has-text-centered has-text-dark has-text-weight-bold">
+          Events
+        </h1>
+      </div>
+      <div class="columns is-centered my-6">
+        <div class="column is-3">
+          <div class="card has-background-dark has-text-centered">
+            <div class="card-content">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/gts.png" alt="GTS">
+                  </figure>
+                </div>
+              </div>
+              <p class="title has-text-light has-text-weight-bold is-italic">
+                GTS
+              </p>
+              <p class="subtitle has-text-light has-text-weight-light">
+                Goes To School
+              </p>
+              <a class="button is-light is-rounded is-small has-text-dark has-text-weight-bold">See more &#10148;</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-3">
+          <div class="card has-background-dark has-text-centered">
+            <div class="card-content">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/talks.png" alt="POISETalks">
+                  </figure>
+                </div>
+              </div>
+              <p class="title has-text-light has-text-weight-bold is-italic">
+                POISETalks
+              </p>
+              <p class="subtitle has-text-light has-text-weight-light">
+                Poise Webinar Series
+              </p>
+              <a class="button is-light is-rounded is-small has-text-dark has-text-weight-bold">See more &#10148;</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-3">
+          <div class="card has-background-dark has-text-centered">
+            <div class="card-content">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/chats.png" alt="POISEChats">
+                  </figure>
+                </div>
+              </div>
+              <p class="title has-text-light has-text-weight-bold is-italic">
+                POISEChats
+              </p>
+              <p class="subtitle has-text-light has-text-weight-light">
+                POISE Series of Podcasts
+              </p>
+              <a class="button is-light is-rounded is-small has-text-dark has-text-weight-bold">See more &#10148;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered mt-6">
+        <div class="column is-3">
+          <div class="card has-background-dark has-text-centered">
+            <div class="card-content">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/charity.png" alt="Charity">
+                  </figure>
+                </div>
+              </div>
+              <p class="title has-text-light has-text-weight-bold is-italic">
+                Charity
+              </p>
+              <p class="subtitle has-text-light has-text-weight-light">
+                POISE Humanitarian Event
+              </p>
+              <a class="button is-light is-rounded is-small has-text-dark has-text-weight-bold">See more &#10148;</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-3">
+          <div class="card has-background-dark has-text-centered">
+            <div class="card-content">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/wafers.png" alt="WAFERS">
+                  </figure>
+                </div>
+              </div>
+              <p class="title has-text-light has-text-weight-bold is-italic">
+                WAFERS
+              </p>
+              <p class="subtitle has-text-light has-text-weight-light">
+                Summer Course
+              </p>
+              <a class="button is-light is-rounded is-small has-text-dark has-text-weight-bold">See more &#10148;</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-3">
+          <div class="card has-background-dark has-text-centered">
+            <div class="card-content">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="images/summit.png" alt="Summit">
+                  </figure>
+                </div>
+              </div>
+              <p class="title has-text-light has-text-weight-bold is-italic">
+                Summit
+              </p>
+              <p class="subtitle has-text-light has-text-weight-light">
+                POISE Closing Ceremony
+              </p>
+              <a class="button is-light is-rounded is-small has-text-dark has-text-weight-bold">See more &#10148;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer has-background-dark" id="footer">
+      <div class="columns is-vcentered">
+        <div class="column is-2">
+          <figure class="image is-128x128">
+            <img src="images/poiselogo.png" alt="POISE">
+          </figure>
+        </div>
+        <div class="column is-7">
+          <p class="has-text-light has-text-weight-medium">
+            Departemen Teknik Kimia FT UGM
+          </p>
+          <p class="has-text-light has-text-weight-light">
+            Jl. Grafika no.2, Kabupaten Sleman, DIY. 55281
+            <br>
+            <br>
+            E-mail: poise.ugm@gmail.com
+          </p>
+        </div>
+        <div class="column">
+          <p class="is-size-3 has-text-light has-text-weight-bold">
+            Keep in Touch
+          </p>
+          <div class="columns">
+            <div class="column is-3">
+              <a href="https://web.facebook.com/poisekmtkugm">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="images/fb.png" alt="Facebook">
+                </figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://www.instagram.com/poise.ugm/">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="images/ig.png" alt="Instagram">
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-3">
+              <a href="https://line.me/R/ti/p/%40poiseugm2021">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="images/line.png" alt="LINE">
+                </figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://twitter.com/POISEUGM">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="images/twitter.png" alt="Twitter">
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
