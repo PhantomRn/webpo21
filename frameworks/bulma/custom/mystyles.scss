@@ -41,6 +41,13 @@ $dark: #181825;
 $light: #f9f6f6;
 $family-secondary: "Gotham", "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-sans-serif: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+.image-bg {
+    background-image: url('../images/hero.png');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size:  cover;
+    background-color: #999;
+}
 @import "../sass/utilities/_all.sass";
 @import "../sass/base/_all.sass";
 @import "../sass/grid/columns.sass";
