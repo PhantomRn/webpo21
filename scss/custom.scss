@@ -1,4 +1,42 @@
+$dark: #181825;
+$light:  #f9f6f6;
+@font-face {
+  src: url("../../../fonts/gotham/GothamSSm-Black.woff2") format("woff2"),
+       url("../../../fonts/gotham/GothamSSm-Black.woff") format("woff");
+  font-family: "Gotham", sans-serif;
+  font-weight: 900; }
+@font-face {
+  src: url("../../../fonts/poppins/poppins-v15-latin-300.woff2") format("woff2"),
+       url("../../../fonts/poppins/poppins-v15-latin-300.woff") format("woff");
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; }
+@font-face {
+  src: url("../../../fonts/poppins/poppins-v15-latin-400.woff2") format("woff2"),
+       url("../../../fonts/poppins/poppins-v15-latin-400.woff") format("woff");
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+@font-face {
+  src: url("../../../fonts/poppins/poppins-v15-latin-500.woff2") format("woff2"),
+       url("../../../fonts/poppins/poppins-v15-latin-500.woff") format("woff");
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; }
+@font-face {
+  src: url("../../../fonts/poppins/poppins-v15-latin-700.woff2") format("woff2"),
+       url("../../../fonts/poppins/poppins-v15-latin-700.woff") format("woff");
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; }
+@font-face {
+  src: url("../../../fonts/poppins/poppins-v15-latin-700italic.woff2") format("woff2"),
+       url("../../../fonts/poppins/poppins-v15-latin-700italic.woff") format("woff");
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic; }
+$font-family-sans-serif: "Poppins";
+$headings-font-family: "Gotham";
+$headings-font-weight:900;
+$display-font-weight: 900;
 @import "../frameworks/bootstrap/scss/bootstrap";
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
