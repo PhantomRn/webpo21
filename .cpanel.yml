@@ -10,3 +10,4 @@ deployment:
     - /bin/cp -R competition $DEPLOYPATH
     - /bin/cp -R events $DEPLOYPATH
     - /bin/cp -R dev $DEPLOYPATH
+    - /bin/cp -R frameworks/bootstrap/dist $DEPLOYPATH
