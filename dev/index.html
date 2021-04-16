@@ -1,236 +1,289 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Untitled</title>
-        <meta name="description" content="POISE (Process Engineering Series of Events)">
+        <title>POISE UGM 2021</title>
+        <meta name="description" content="Process Engineering Series of Events">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="images/favicon.webp" type="image/webp">
-        <link rel="stylesheet" href="styles/home.css">
+        <link rel="icon" sizes="16x16 32x32" href="../images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../images/favicon-152.png">
+        <meta name="msapplication-TileColor" content="#181825">
+        <meta name="msapplication-TileImage" content="../images/favicon-144.png">
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="../frameworks/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </head>
-    <body class="has-navbar-fixed-top">
-        <nav class="navbar is-dark is-fixed-top" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    <img src="images/poiselogo.webp" alt="POISE">
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="height: auto !important">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/brandicon.webp">
                 </a>
-                <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDrop">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </div>
-            </div>
-            <div class="navbar-menu" id="navbarDrop">
-                <div class="navbar-start">
-                </div>
-                <div class="navbar-end">
-                    <a class="navbar-item is-active" href="https://poiseugm.net/">
-                        Home
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            Events
-                        </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/gts">
-                                GTS
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-dar kd-flex justify-content-end"  id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
                             </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/poisetalks">
-                                POISETalks
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="events/gts">GTS</a></li>
+                                <li><a class="dropdown-item" href="events/poisetalks">POISETalks</a></li>
+                                <li><a class="dropdown-item" href="events/poisechats">POISEChats</a></li>
+                                <li><a class="dropdown-item" href="events/charity">Charity</a></li>
+                                <li><a class="dropdown-item" href="events/wafers">WAFERS</a></li>
+                                <li><a class="dropdown-item" href="events/summit">Summit</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Competition
                             </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/poisechats">
-                                POISEChats
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/charity">
-                                Charity
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/wafers">
-                                WAFERS
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/summit">
-                                Summit
-                            </a>
-                        </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            Competition
-                        </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/phase">
-                                PHASE
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/psico">
-                                PSICO
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/safecom">
-                                SAFECOM
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/catalyst">
-                                CATALYST
-                            </a>
-                        </div>
-                    </div>
-                    <a class="navbar-item" href="#footer">
-                        Contact
-                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="competition/phase">PHASE</a></li>
+                                <li><a class="dropdown-item" href="competition/psico">PSICO</a></li>
+                                <li><a class="dropdown-item" href="competition/safecom">SAFECOM</a></li>
+                                <li><a class="dropdown-item" href="competition/catalyst">CATALYST</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <section class="section">
-            <form action="form.php" method="POST">
-                <div class="field">
-                    <label class="label">Full name</label>
-                    <div class="control">
-                        <input class="input" type="text" name="name" placeholder="Name">
-                    </div>
+        <div class="container-fluid bg-dark mt-5 pt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <h1 class="display-1 text-warning pt-5">POISETalks</h1>
                 </div>
-
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" name="email" placeholder="user@mail.com">
-                    </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light mb-5">
+            <div class="row justify-content-center">
+                <div class="col-2" style="margin-top:-6rem;">
+                    <img src="../images/talks.webp" class="img-fluid" alt="POISETalks">
                 </div>
-
-                <div class="field">
-                    <label class="label">Date of Birth</label>
-                    <div class="control">
-                        <input class="input" type="date" name="dob" min="1950-01-01" max="2015-01-01" placeholder="2000-01-01">
+                <div class="col-md-6">
+                    <p>POISETalks is a series of talks that consist of five online seminars and one online workshop. This event will be held in six days. We provide a platform to give new perspectives for audiences with updated issues related to technical and non-technical aspects in industries that we hope can enhance professional youth in sustainability of industry and related sectors.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <a href="#" class="btn btn-warning rounded-pill text-light">Webinars Registration</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn btn-warning rounded-pill text-light">Workshop Registration</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Gender</label>
-                    <div class="control">
-                        <label class="radio">
-                            <input type="radio" name="gender" value="male">
-                            Male
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="gender" value="female">
-                            Female
-                        </label>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Phone Number</label>
-                    <div class="control">
-                        <input class="input" type="tel" name="phone" placeholder="+620000000">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Institution</label>
-                    <div class="control">
-                        <input class="input" type="text" name="institution" placeholder="High School/University">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Webinar Selection</label>
-                    <div class="control">
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar1" value="w1">
-                            Webinar 1
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar2" value="w2">
-                            Webinar 2
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar3" value="w3">
-                            Webinar 3
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar4" value="w4">
-                            Webinar 4
-                        </label>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Twibbon</label>
-                    <div class="file">
-                        <label class="file-label">
-                            <input class="file-input" type="file" name="resume">
-                            <span class="file-cta">
-                                <span class="file-icon">
-                                    <i class="fas fa-upload"></i>
-                                </span>
-                                <span class="file-label">
-                                    Choose a file…
-                                </span>
-                            </span>
-                        </label>
-                    </div>
-                    <div class="field">
-                        <div class="control">
-                            <input type="submit" name="submit" class="button is-primary">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <a href="#" class="btn btn-light text-warning rounded-pill border-warning">Brochure</a>
                         </div>
                     </div>
                 </div>
-            </form>
-        </section>
-
-        <footer class="footer has-background-dark" id="footer">
-            <div class="columns is-vcentered">
-                <div class="column is-2">
-                    <figure class="image is-128x128">
-                        <img src="images/poiselogo.webp" alt="POISE">
-                    </figure>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-7">
+                    <img src="../images/talksbloat.webp" class="img-fluid" alt="6 Webinars & 1 Workshop">
                 </div>
-                <div class="column is-7">
-                    <p class="has-text-light has-text-weight-medium">
-                        Departemen Teknik Kimia FT UGM
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light py-5">
+            <h1 class="display-3 text-center">Timeline</h1>
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col-6">
+                    <img src="../images/talkstl.webp" class="img-fluid" alt="Timeline">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluod bg-light text-dark py-5 my-5">
+            <h1 class="display-3 text-center">Safety Workshop<br>Registration Procedure</h1>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/d1.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Fill in the registration form and complete the payment fee<br>Registration fee IDR 15.000/Person<br>Account number:
+                    <ul>
+                        <li>BNI : 0831990558 (Dani Intan Kumala)</li>
+                        <li>Mandiri : 1370018116935 (Aqiela Mahannada)</li>
+                        <li>Gopay : 085743761135 (Zahratul Khasanah)</li>
+                    </ul>
                     </p>
-                    <p class="has-text-light has-text-weight-light">
+                </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/d2.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>Participant will receive e-ticket and reminder, 5 days before the event starts</p>
+                </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/d3.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>Participant will receive an confirmation email after completing the registration<br>If you haven’t received an email from POISEUGM, please contact us on externalpoise.ugm@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light py-5">
+            <h1 class="display-3 text-center">Terms and Conditions</h1>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/l1.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>Tickets are non-refundable</p>
+                </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/l2.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>This event is open for public</p>
+                </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/l3.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>Make sure the information is filled correctly,<br>especially your name and email</p>
+                </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/l4.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>Reminder email and e-ticket (including the Zoom link) will be sent two days before the event starts</p>
+                </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/l5.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>Certificates will be sent through email, if you haven't received the email please contact us on externalpoise.ugm@gmail.com</p>
+                </div>
+             </div>
+             <div class="row my-4 justify-content-center">
+                <div class="col-md-1">
+                    <img src="../images/num/l6.webp" class="img-fluid" alt="poise">
+                </div>
+                <div class="col-md-8">
+                    <p>If you want to know more about this event,<br>follow us on our social media below</p>
+                </div>
+             </div>
+        </div>
+        <div class="container-fluid bg-light text-dark py-5 my-5">
+            <h1 class="display-3 text-center">Registration Form</h1>
+            <form class="row g-4 mx-5">
+                <div class="col-12">
+                    <label for="name" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Male" id="male">
+                        <label class="form-check-label" for="id">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Female" id="female">
+                        <label class="form-check-label" for="id">Female</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="dob" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" placeholder="2000-01-01" min="1920-01-01" max="2021-01-01">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@mail.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+620000000000">
+                </div>
+                <div class="col-12">
+                    <label for="institution" class="form-label">Institution/Public</label>
+                    <input type="text" class="form-control" id="institution" placeholder="High School / University / Public">
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+        <div class="container-fluid bg-dark text-light py-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <h2 class="display-4 text-end">Questions?</h2>
+                </div>
+                <div class="col-md-4">
+                    <p>Nabila Nadia Setiadi<br>081293934283 (WhatsApp)<br>nblnadia (LINE)</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <h2 class="display-4 text-end">Please<br>Contact Us</h2>
+                </div>
+                <div class="col-md-4">
+                    <p>Alexandra Natasha Mirella Wijayanto<br>087898502471 (WhatsApp)<br>tashamirella (LINE)</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light pt-5" id="footer">
+            <div class="row py-5 ">
+                <div class="col-md-1">
+                    <img src="images/poiselogo.webp" class="img-fluid" alt="POISE">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <p>
+                        Departemen Teknik Kimia FT UGM
+                        <br>
                         Jl. Grafika no.2, Kabupaten Sleman, DIY. 55281
-                        <br>
-                        <br>
+                        <br><br>
                         E-mail: poise.ugm@gmail.com
                     </p>
                 </div>
-                <div class="column">
-                    <p class="is-size-3 has-text-light has-text-weight-bold">
-                        Keep in Touch
-                    </p>
-                    <div class="columns">
-                        <div class="column is-3">
+                <div class="col-md-3">
+                    <h3 class="fw-bold"> Keep in Touch</h3>
+                    <div class="row mb-4">
+                        <div class="col-3">
                             <a href="https://web.facebook.com/poisekmtkugm">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/fb.webp" alt="Facebook">
-                                </figure>
+                                <img src="images/fb.webp" class="img-fluid" alt="FB">
                             </a>
                         </div>
-                        <div class="column is-3">
+                        <div class="col-3">
                             <a href="https://www.instagram.com/poise.ugm/">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/ig.webp" alt="Instagram">
-                                </figure>
+                                <img src="images/ig.webp" class="img-fluid" alt="IG">
                             </a>
                         </div>
                     </div>
-                    <div class="columns">
-                        <div class="column is-3">
+                    <div class="row mt-4">
+                        <div class="col-3">
                             <a href="https://line.me/R/ti/p/%40poiseugm2021">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/line.webp" alt="LINE">
-                                </figure>
+                                <img src="images/line.webp" class="img-fluid" alt="LINE">
                             </a>
                         </div>
-                        <div class="column is-3">
+                        <div class="col-3">
                             <a href="https://twitter.com/POISEUGM">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/twitter.webp" alt="Twitter">
-                                </figure>
+                                <img src="images/twitter.webp" class="img-fluid" alt="Twitter">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </body>
 </html>
