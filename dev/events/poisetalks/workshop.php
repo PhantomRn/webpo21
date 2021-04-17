@@ -52,7 +52,7 @@ $mail->Port       = 465;
 $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
-$mail->Subject = 'Notifikasi pendaftaran webinar POISE';
+$mail->Subject = 'Notifikasi pendaftaran POISETalks';
 $mail->Body = "$xy<br>Anda telah terdaftar dalam workshop POISE";
 $mail->send();
 ?>
