@@ -59,8 +59,6 @@ if ($_POST['webinar5'] == 1) {
     $stmt->close();
 }
 $mail = new PHPMailer(true);
-$mail = new PHPMailer(true);
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 $mail->isSMTP();
 $mail->Host       = 'mail.poiseugm.net';
 $mail->SMTPAuth   = true;
