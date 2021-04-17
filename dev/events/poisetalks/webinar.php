@@ -27,7 +27,7 @@ $stmt = $mysqli->prepare("INSERT INTO counting (reg) VALUES (?)");
 $y = 1;
 $stmt->bind_param("i", $y);
 $stmt->execute();
-$idnum = mysqli_insert_id();
+$idnum = mysqli_insert_id($mysqli);
 $stmt->close();
 if ($idnum < 10) {
     $xy = "POISE-00$idnum";
