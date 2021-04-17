@@ -21,6 +21,20 @@ try {
   exit('Something went wrong!');
 }
 $mysqli->set_charset("utf8mb4");
+
+$stmt = $mysqli->prepare("INSERT INTO counting (reg) VALUES (?)");
+$stmt->bind_param("i",'1');
+$stmt->execute();
+$idnum = mysqli_insert_id();
+$stmt->close();
+if ($idnum < 10) {
+    $xy = "POISE-00$idnum";
+} elseif ($idnum < 100) {
+    $xy = "POISE-0$idnum";
+} else {
+    $xy = "POISE-$idnum";
+}
+
 $stmt = $mysqli->prepare("INSERT INTO webinar1 (name, email, dob, gender, phone, institution) VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("ssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution']);
 $stmt->execute();

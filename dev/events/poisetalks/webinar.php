@@ -23,6 +23,19 @@ try {
 }
 $mysqli->set_charset("utf8mb4");
 $x = "";
+$stmt = $mysqli->prepare("INSERT INTO counting (reg) VALUES (?)");
+$stmt->bind_param("i",'1');
+$stmt->execute();
+$idnum = mysqli_insert_id();
+$stmt->close();
+if ($idnum < 10) {
+    $xy = "POISE-00$idnum";
+} elseif ($idnum < 100) {
+    $xy = "POISE-0$idnum";
+} else {
+    $xy = "POISE-$idnum";
+}
+
 if ($_POST['webinar1'] == 1) {
     $x .= "<li>POISETalks 1: FMCG</li>";
     $stmt = $mysqli->prepare("INSERT INTO webinar1 (name, email, dob, gender, phone, institution) VALUES (?, ?, ?, ?, ?, ?)");
@@ -70,6 +83,6 @@ $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
 $mail->Subject = 'Notifikasi pendaftaran webinar POISE';
-$mail->Body = "Anda telah terdaftar dalam webinar <ul> $x </ul>";
+$mail->Body = "$xy<br>Anda telah terdaftar dalam webinar <ul> $x </ul>";
 $mail->send();
 ?>
