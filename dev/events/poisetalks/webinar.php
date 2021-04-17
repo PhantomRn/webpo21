@@ -66,7 +66,7 @@ $mail->Host       = 'mail.poiseugm.net';
 $mail->SMTPAuth   = true;
 $mail->Username   = 'notifikasi@poiseugm.net';
 $mail->Password   = '({A=&=32~Kn;a@0$>?};9+I&W}?a\P';
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port       = 465;
 $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
