@@ -23,7 +23,7 @@ try {
 $mysqli->set_charset("utf8mb4");
 
 $stmt = $mysqli->prepare("INSERT INTO counting (reg) VALUES (?)");
-$stmt->bind_param("i",'1');
+$stmt->bind_param("i", 1);
 $stmt->execute();
 $idnum = mysqli_insert_id();
 $stmt->close();
