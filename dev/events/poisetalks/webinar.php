@@ -3,6 +3,7 @@ $path = '../../frameworks/php';
 set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require '../../frameworks/php/PHPMailer/src/Exception.php';
