@@ -53,6 +53,6 @@ $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
 $mail->Subject = 'Notifikasi pendaftaran webinar POISE';
-$mail->Body = "Anda telah terdaftar dalam webinar <ul> $x </ul>";
+$mail->Body = "$xy<br>Anda telah terdaftar dalam workshop POISE";
 $mail->send();
 ?>
