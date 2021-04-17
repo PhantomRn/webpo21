@@ -26,6 +26,8 @@ $stmt->execute();
 $stmt->close();
 
 $mail = new PHPMailer();
+$mail->isSMTP();
+$mail->Host = 'localhost';
 $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
