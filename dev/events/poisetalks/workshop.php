@@ -25,9 +25,15 @@ $stmt->bind_param("ssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POS
 $stmt->execute();
 $stmt->close();
 
-$mail = new PHPMailer();
+$mail = new PHPMailer(true);
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 $mail->isSMTP();
-$mail->Host = 'localhost';
+$mail->Host       = 'mail.poiseugm.net';
+$mail->SMTPAuth   = true;
+$mail->Username   = 'notifikasi@poiseugm.net';
+$mail->Password   = '({A=&=32~Kn;a@0$>?};9+I&W}?a\P';
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port       = 465;
 $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
