@@ -9,7 +9,8 @@ use PHPMailer\PHPMailer\Exception;
 require '../../frameworks/php/PHPMailer/src/Exception.php';
 require '../../frameworks/php/PHPMailer/src/PHPMailer.php';
 require '../../frameworks/php/PHPMailer/src/SMTP.php';
-
+$dbconfirm = 0;
+$upconfirm = 0;
 $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -81,5 +82,9 @@ $mail->Subject = 'Notifikasi pendaftaran POISETalks';
 $recname = $_POST['name'];
 $mail->Body = "Dear ,<br><br>Congratulations, you have sucessfully signed oup on our following POISETalks webinars:<ul> $x </ul>We are hoping for you to have such a marvelous experience and gain a better understanding about safety & green industry culture for sustainable future.<br>We are very excited and looking forward for your participation.<br><br>Let us know if you have any further questions by contacting:<br>LINE: @poiseugm2021 (POISE UGM)<br>Nabila: 081293934283 (WhatsApp)<br>Natasha: 087898502471 (WhatsApp)<br><br>Best regards,<br>POISE UGM";
 $mail->send();
-
+if ($dbconfirm == 1 && $upconfirm == 1) {
+    header("Location: https://dev.poiseugm.net/events/poisetalks/success.html");
+} else {
+    header("Location: https://dev.poiseugm.net/events/poisetalks/failed.html");
+}
 ?>
