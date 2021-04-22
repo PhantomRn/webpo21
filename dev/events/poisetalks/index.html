@@ -378,7 +378,8 @@
                 </div>
                 <div class="container-fluid bg-light text-dark py-5 my-5">
                     <h1 class="display-3 text-center">Registration Form</h1>
-                    <form class="row g-4 mx-5" action="workshop.php" method="post">
+                    <form class="row g-4 mx-5" enctype="multipart/form-data" action="workshop.php" method="post">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
                         <div class="col-12">
                             <label for="name" class="form-label">Full name</label>
                             <input type="text" class="form-control" id="name" name="name">
@@ -410,7 +411,7 @@
                             <input type="text" class="form-control" id="institution" name="institution" placeholder="High School / University / Public">
                         </div>
                         <div class="col-12">
-                            <label for="talkfil" class="form-label">Proof of Payment</label>
+                            <label for="talkfile" class="form-label">Proof of Payment</label>
                             <input class="form-control" type="file" id="talkfile" name="payment">
                         </div>
                         <button type="submit" class="btn btn-dark">Submit</button>
