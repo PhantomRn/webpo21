@@ -82,9 +82,13 @@ $mail->Subject = 'Notifikasi pendaftaran POISETalks';
 $recname = $_POST['name'];
 $mail->Body = "Dear $recname,<br><br>Congratulations, you have sucessfully signed oup on our following POISETalks webinars:<ul> $x </ul>We are hoping for you to have such a marvelous experience and gain a better understanding about safety & green industry culture for sustainable future.<br>We are very excited and looking forward for your participation.<br><br>Let us know if you have any further questions by contacting:<br>LINE: @poiseugm2021 (POISE UGM)<br>Nabila: 081293934283 (WhatsApp)<br>Natasha: 087898502471 (WhatsApp)<br><br>Best regards,<br>POISE UGM";
 $mail->send();
+$hostnaem  = $_SERVER['HTTP_HOST'];
+$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+$suc = 'success.html';
+$fai = 'failed.html';
 if ($dbconfirm == 1 && $upconfirm == 1) {
-    header("Location: https://dev.poiseugm.net/events/poisetalks/success.html");
+    header("Location: https://$hostnaem$uri/$suc");
 } else {
-    header("Location: https://dev.poiseugm.net/events/poisetalks/failed.html");
+    header("Location: https://$hostnaem$uri/$fai");
 }
 ?>

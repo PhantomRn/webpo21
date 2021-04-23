@@ -70,9 +70,13 @@ $recname = $_POST['name'];
 $mail->Body = "Dear $recname,<br><br>Congratulations, you have sucessfully signed up for our <em>Safety Workshop</em> in Process Engineering Series of Events (POISE) 2021.<br><br>Your invoice number is : $xy <br><br>Through this <em>Safety Workshop</em>, we are hoping for you to have such a marvellous experience and gain awareness regarding the importance of safety.<br>We are very excited and looking forward for your participation.<br><br>Let us know if you have any further questions by contacting:<br>LINE: @poiseugm2021 (POISE UGM)<br>Nabila: 081293934283 (WhatsApp)<br>Natasha: 087898502471 (WhatsApp)<br><br>Best regards,<br>POISE UGM";
 $mail->send();
 */
+$hostnaem  = $_SERVER['HTTP_HOST'];
+$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+$suc = 'success.html';
+$fai = 'failed.html';
 if ($dbconfirm == 1 && $upconfirm == 1) {
-    header("Location: https://dev.poiseugm.net/events/poisetalks/success.html");
+    header("Location: https://$hostnaem$uri/$suc");
 } else {
-    header("Location: https://dev.poiseugm.net/events/poisetalks/failed.html");
+    header("Location: https://$hostnaem$uri/$fai");
 }
 ?>
