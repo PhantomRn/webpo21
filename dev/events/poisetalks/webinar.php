@@ -9,6 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 require '../../frameworks/php/PHPMailer/src/Exception.php';
 require '../../frameworks/php/PHPMailer/src/PHPMailer.php';
 require '../../frameworks/php/PHPMailer/src/SMTP.php';
+
 $dbconfirm = 0;
 $upconfirm = 0;
 $username = "poiq2362_admin";
@@ -69,13 +70,13 @@ if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
 }
 $mail = new PHPMailer(true);
 $mail->isSMTP();
-$mail->Host       = 'smtp.gmail.com';
-$mail->Port       = 587;
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Host       = 'mail.poiseugm.net';
+$mail->Port       = 465;
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->SMTPAuth   = true;
-$mail->Username   = 'externalpoise.ugm@gmail.com';
-$mail->Password   = 'tiketing123';
-$mail->setFrom('externalpoise.ugm@gmail.com', 'POISE UGM');
+$mail->Username   = 'notifikasi@poiseugm.net';
+$mail->Password   = '({A=&=32~Kn;a@0$>?};9+I&W}?a\P';
+$mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
 $mail->Subject = 'Notifikasi pendaftaran POISETalks';
