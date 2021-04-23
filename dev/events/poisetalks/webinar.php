@@ -70,11 +70,11 @@ if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
 $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host       = 'smtp.gmail.com';
+$mail->Port       = 465;
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->SMTPAuth   = true;
 $mail->Username   = 'externalpoise.ugm@gmail.com';
 $mail->Password   = 'tiketing123';
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port       = 587;
 $mail->setFrom('externalpoise.ugm@gmail.com', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
