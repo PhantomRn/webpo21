@@ -60,7 +60,7 @@ if ($_POST['webinar5'] == 1) {
     $stmt->execute();
     $stmt->close();
 }
-$uploaddir = '../../fileup/webinar/';
+$uploaddir = '../../../../uploads/poisetalks/webinar/';
 $uploadfile = $uploaddir . basename($_FILES['twib']['name']);
 if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;

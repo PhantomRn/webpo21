@@ -46,7 +46,7 @@ $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
 
-$uploaddir = '../../fileup/workshop/';
+$uploaddir = '../../../../uploads/poisetalks/workshop/';
 $uploadfile = $uploaddir . basename($_FILES['payment']['name']);
 if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
