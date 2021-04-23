@@ -406,6 +406,10 @@
                             <input type="text" class="form-control" required id="institution" name="institution" placeholder="High School / University / Public">
                         </div>
                         <div class="col-12">
+                            <label for="talkfile" class="form-label">Proof of Payment</label>
+                            <input class="form-control" type="file" required id="talkfile" name="payment">
+                        </div>
+                        <div class="col-12">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" required name="paymethod" id="bni" value="bni">
                                 <label class="form-check-label" for="bni">BNI</label>
@@ -418,10 +422,6 @@
                                 <input class="form-check-input" type="radio" required name="paymethod" id="ovo" value="ovo">
                                 <label class="form-check-label" for="ovo">OVO</label>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="talkfile" class="form-label">Proof of Payment</label>
-                            <input class="form-control" type="file" required id="talkfile" name="payment">
                         </div>
                         <button type="submit" class="btn btn-dark" value="Upload">Submit</button>
                     </form>
