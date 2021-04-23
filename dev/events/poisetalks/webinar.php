@@ -69,13 +69,13 @@ if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
 }
 $mail = new PHPMailer(true);
 $mail->isSMTP();
-$mail->Host       = 'mail.poiseugm.net';
+$mail->Host       = 'smtp.gmail.com';
 $mail->SMTPAuth   = true;
-$mail->Username   = 'notifikasi@poiseugm.net';
-$mail->Password   = '({A=&=32~Kn;a@0$>?};9+I&W}?a\P';
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-$mail->Port       = 465;
-$mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
+$mail->Username   = 'externalpoise.ugm@gmail.com';
+$mail->Password   = 'tiketing123';
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port       = 587;
+$mail->setFrom('externalpoise.ugm@gmail.com', 'POISE UGM');
 $mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
 $mail->Subject = 'Notifikasi pendaftaran POISETalks';
