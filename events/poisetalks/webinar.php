@@ -19,7 +19,8 @@ $dbconfirm = 0;
 $upconfirm = 0;
 
 $uploaddir = '../../../uploads/poisetalks/webinar/';
-$uploadfile = $uploaddir . basename($_FILES['twib']['name']);
+$nameformat = date('Y-m-d') . '_' . basename($_FILES['twib']['name']);
+$uploadfile = $uploaddir . $nameformat;
 if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
 } else {
@@ -49,35 +50,35 @@ $x = "";
 if ($webinar1 == 1) {
     $x .= "<li>POISETalks 1: FMCG</li>";
     $stmt = $mysqli->prepare("INSERT INTO webinar1 (name, email, dob, gender, phone, institution, filename) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_FILES['twib']['name']);
+    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $nameformat);
     $stmt->execute();
     $stmt->close();
 }
 if ($webinar2 == 1) {
     $x .= "<li>POISETalks 2: Nickel Industry</li>";
     $stmt = $mysqli->prepare("INSERT INTO webinar2 (name, email, dob, gender, phone, institution, filename) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_FILES['twib']['name']);
+    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $nameformat);
     $stmt->execute();
     $stmt->close();
 }
 if ($webinar3 == 1) {
     $x .= "<li>POISETalks 3: Renewable energy</li>";
     $stmt = $mysqli->prepare("INSERT INTO webinar3 (name, email, dob, gender, phone, institution, filename) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_FILES['twib']['name']);
+    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $nameformat);
     $stmt->execute();
     $stmt->close();
 }
 if ($webinar4 == 1) {
     $x .= "<li>POISETalks 4: Diversity and Inclusion in Engineering</li>";
     $stmt = $mysqli->prepare("INSERT INTO webinar4 (name, email, dob, gender, phone, institution, filename) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_FILES['twib']['name']);
+    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $nameformat);
     $stmt->execute();
     $stmt->close();
 }
 if ($webinar5 == 1) {
     $x .= "<li>POISETalks 5: Challenge in Sustainable Industry</li>";
     $stmt = $mysqli->prepare("INSERT INTO webinar5 (name, email, dob, gender, phone, institution, filename) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_FILES['twib']['name']);
+    $stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $nameformat);
     $stmt->execute();
     $stmt->close();
 }
