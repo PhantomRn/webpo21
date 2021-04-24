@@ -16,9 +16,10 @@ $upconfirm = 0;
 date_default_timezone_set('Asia/Jakarta');
 $uploaddir = '../../../uploads/poisetalks/workshop/';
 $curdate = date('Y-m-d');
-$das = '-';
-$filedate = $curdate . $das;
-$nameformat = $curdate . basename($_FILES['payment']['name']);
+$tiem = date('H:i:s');
+$un = '_';
+$filedate = $curdate . $un . $tiem;
+$nameformat = $filedate . $un . basename($_FILES['payment']['name']);
 $uploadfile = $uploaddir . $nameformat;
 if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;

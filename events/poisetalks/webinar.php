@@ -21,9 +21,10 @@ $upconfirm = 0;
 date_default_timezone_set('Asia/Jakarta');
 $uploaddir = '../../../uploads/poisetalks/webinar/';
 $curdate = date('Y-m-d');
-$das = '-';
-$filedate = $curdate . $das;
-$nameformat = $filedate . basename($_FILES['twib']['name']);
+$tiem = date('H:i:s');
+$un = '_';
+$filedate = $curdate . $un . $tiem;
+$nameformat = $filedate . $un . basename($_FILES['twib']['name']);
 $uploadfile = $uploaddir . $nameformat;
 if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
