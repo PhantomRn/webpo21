@@ -1,17 +1,27 @@
 <?php
 $path = '../../frameworks/php';
 set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-
+/*
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-$dbconfirm = 0;
-$upconfirm = 0;
-
 require '../../frameworks/php/PHPMailer/src/Exception.php';
 require '../../frameworks/php/PHPMailer/src/PHPMailer.php';
 require '../../frameworks/php/PHPMailer/src/SMTP.php';
+*/
+$dbconfirm = 0;
+$upconfirm = 0;
+
+$uploaddir = '../../../../uploads/poisetalks/workshop/';
+$uploadfile = $uploaddir . basename($_FILES['payment']['name']);
+if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
+    $upconfirm = 1;
+} else {
+    $upconfirm = 0;
+}
+$upfilename = $_FILES['payment']['name]'];
+
 $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -40,19 +50,13 @@ if ($idnum < 10) {
 } 
 */
 
-$stmt = $mysqli->prepare("INSERT INTO workshop (name, email, dob, gender, phone, institution, paymethod) VALUES (?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_POST['paymethod']);
+$stmt = $mysqli->prepare("INSERT INTO workshop (name, email, dob, gender, phone, institution, paymethod, filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_POST['paymethod'], $upfilename);
 $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
 
-$uploaddir = '../../../../uploads/poisetalks/workshop/';
-$uploadfile = $uploaddir . basename($_FILES['payment']['name']);
-if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
-    $upconfirm = 1;
-} else {
-    $upconfirm = 0;
-}
+
 /*
 $mail = new PHPMailer(true);
 $mail->isSMTP();
