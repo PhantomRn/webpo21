@@ -6,18 +6,18 @@
         <title>POISE UGM 2021</title>
         <meta name="description" content="Process Engineering Series of Events">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" sizes="16x16 32x32" href="images/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" href="images/favicon-152.png">
+        <link rel="icon" sizes="16x16 32x32" href="../../images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../../images/favicon-152.png">
         <meta name="msapplication-TileColor" content="#181825">
-        <meta name="msapplication-TileImage" content="images/favicon-144.png">
-        <link rel="stylesheet" href="../../styles/style.css">
-        <script src="../../frameworks/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <meta name="msapplication-TileImage" content="../../images/favicon-144.png">
+        <link rel="stylesheet" href="../../styles/style.min.css">
+        <script src="../../scripts/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="height: auto !important">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../../">
-                    <img src="../../images/brandicon.webp">
+                    <img src="../../images/brandicon.svg" class="img-fluid" style="height:48px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,15 +58,394 @@
                 </div>
             </div>
         </nav>
-        <div class="px-4 py-5 text-center vh-100" style=" background-image: url('images/hero.png');">
-            <div class="position-absolute top-50 start-50 translate-middle">
-                <h1 class="display-3">Coming soon!</h1>
+        <div class="container-fluid bg-dark mt-5 pt-5 pb-4">
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <img src="../../images/talks.svg" class="img-fluid" alt="POISETalks">
+                </div>
+                <div class="col-md-6">
+                    <p class="display-1 pt-5" style="color:#e9b31f"><em>POISETalks</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light mb-5 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p>POISETalks is a series of talks that consist of five online seminars and one online workshop. This event will be held in six days. We provide a platform to give new perspectives for audiences with updated issues related to technical and non-technical aspects in industries that we hope can enhance professional youth in sustainability of industry and related sectors.</p>
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item mx-3 my-2" role="presentation">
+                            <button class="btn nav-link rounded-pill bg-warning text-light active" onclick="location.href='#webinar';" id="webinar-tab" data-bs-toggle="pill" data-bs-target="#webinar" type="button" role="tab" aria-controls="webinar" aria-selected="true">Webinar Reigstration</button>
+                        </li>
+                        <li class="nav-item mx-3 my-2" role="presentation">
+                            <button class="nav-link rounded-pill bg-warning text-light" onclick="location.href='#webinar';" id="workshop-tab" data-bs-toggle="pill" data-bs-target="#workshop" type="button" role="tab" aria-controls="workshop" aria-selected="false">Workshop Registration</button>
+                        </li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <a href="https://drive.google.com/file/d/12XCGeYCSb3G_21VSzVsk3uXqZBIsTDWg/view" class="btn btn-light text-warning rounded-pill border-warning">Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light py-5 vh-100">
+            <h1 class="display-3 text-center">Timeline</h1>
+            <div class="row row-cols-1 justify-content-center align-items-center h-75">
+                <div class="col-8">
+                    <img src="../../images/talkstl.svg" class="img-fluid" alt="Timeline">
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="tab-content">
+            <div class="tab-pane fade show active" id="webinar" role="tabpanel" aria-labelledby="webinar-tab">
+                <div class="container-fluid bg-light text-dark py-5 my-5">
+                    <h1 class="display-3 text-center">POISETalks Webinars<br>Registration Procedure</h1>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-6">01</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>To understand more about our events, please read the information about the participating events</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-6">02</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Select the session that you want to attend (Multiple sessions are allowed)</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-6">03</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Fill in the registration form</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-6">04</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Special requirements (<a href="https://bit.ly/POISETalks2021">bit.ly/POISETalks2021</a>):</p>
+                            <ol type="a">
+                                <li>Post your photo with our twibbon (<a href="https://twb.nz/poisetalks2021">twibbonize</a>) on your <b>instagram</b> account, or</li>
+                                <li>Send our poster and captions to five different groups on social media: LINE or WhatsApp.</li>
+                            </ol>
+                            <p>Please upload your screenshot on the registration form</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-6">05</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Participants will receive e-ticket and reminder, 5 days before the event starts</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-6">06</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Participant will receive a confirmation email (please check the email on spam inboxes) after completing the registration, if you haven’t received email from POISE UGM, please contact us on <b>poise.ugm@gmail.com</b> or the contact person listed below</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-dark text-light py-5">
+                    <h1 class="display-3 text-center">Terms and Conditions</h1>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Tickets are non-refundable</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>This event is open for public</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Make sure the information is filled correctly,<br>especially your name and email</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Reminder email and e-ticket (including the Zoom Meeting and WhatsApp link) will be sent 5 days before the event starts</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Participants are able to join the WhatsApp group through the link sent via email to receive further updates regarding the webinar and workshop</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Certificates will be sent through email, if you haven't received the email please contact us on <b>poise.ugm@gmail.com</b></p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>For more information, please reach us at:<br><a href="https://linktr.ee/poiseugm">Linktree</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-light text-dark py-5 my-5">
+                    <h1 class="display-3 text-center">Registration Form</h1>
+                    <form class="row g-4 mx-5 align-items-center" enctype="multipart/form-data" action="webinar.php" method="post">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
+                        <div class="col-12">
+                            <label for="name" class="form-label">Full name</label>
+                            <input type="text" class="form-control" required id="name" name="name">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="gender" id="female" value="female">
+                                <label class="form-check-label" for="id">Female</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" required id="dob" name="dob" placeholder="2000-01-01" min="1920-01-01" max="2021-01-01">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" required id="email" name="email" placeholder="name@mail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input type="tel" class="form-control" required id="phone" name="phone" minlength="6" maxlength="16" placeholder="+620000000000">
+                        </div>
+                        <div class="col-12">
+                            <label for="institution" class="form-label">Institution/Public</label>
+                            <input type="text" class="form-control" required id="institution" name="institution" placeholder="High School / University / Public">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="web1" name="webinar1">
+                                <label class="form-check-label" for="web">POISEtalks 1: FMCG [<b>May 22, 2021</b>: 09.30 - 12.15 (GMT+7)]</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="web2" name="webinar2">
+                                <label class="form-check-label" for="web">POISEtalks 2: Nickel Industry [<b>May 23, 2021</b>: 09.15 - 12.35 (GMT+7)]</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="web3" name="webinar3">
+                                <label class="form-check-label" for="web3">POISEtalks 3: Renewable Energy [<b>May 29, 2021</b>: 09.30 - 12.15 (GMT+7)]</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="web4" name="webinar4">
+                                <label class="form-check-label" for="web4">POISEtalks 4: Diversity and Inclusion in Engineering [<b>June 5, 2021</b>: 09.30 - 12.15 (GMT+7)]</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="web5" name="webinar5">
+                                <label class="form-check-label" for="web5">POISEtalks 5: Challenge in Sustainable Industry [<b>June 6, 2021</b>: 09.30 - 12.15 (GMT+7)]</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="talkfil" class="form-label">Twibbon / Proof of Sharing</label>
+                            <input class="form-control" type="file" required id="talkfile" name="twib">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="workshop" role="tabpanel" aria-labelledby="workshop-tab">
+                <div class="container-fluid bg-light text-dark py-5 my-5">
+                    <h1 class="display-3 text-center">Safety Workshop<br>Registration Procedure</h1>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-5">01</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                Fill in the registration form and complete the payment fee<br>Registration fee: <b>IDR 15.000/Person</b><br>Account number:
+                                <ul>
+                                    <li>BNI : 0831990558 (<b>Dani Intan Kumala</b>)</li>
+                                    <li>Mandiri : 1370018116935 (<b>Aqiela Mahannada</b>)</li>
+                                    <li>Gopay : 085743761135 (<b>Zahratul Khasanah</b>)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-5">02</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Participant will receive e-ticket and reminder, 5 days before the event starts</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-md-1">
+                            <p class="display-5">03</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Participants will receive a confirmation email after the pay-ment has been verified, maximum 2x24 hours after registration. If you haven’t received an email from POISEUGM, please contact us on poise.ugm@gmail.com or the contact person below</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-dark text-light py-5">
+                    <h1 class="display-3 text-center">Terms and Conditions</h1>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Tickets are non-refundable</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>This event is open for public</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Make sure the information is filled correctly,<br>especially your name and email</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Reminder email and e-ticket (including the Zoom Meeting and WhatsApp link) will be sent 5 days before the event starts</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Participants are able to join the WhatsApp group through the link sent via email to receive further updates regarding the webinar and workshop</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>Certificates will be sent through email, if you haven't received the email please contact us on poise.ugm@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-1">
+                            <img src="../../images/sqbul.svg" class="img-fluid" alt="poise">
+                        </div>
+                        <div class="col-8">
+                            <p>For more information, please reach us at:<br><a href="https://linktr.ee/poiseugm">Linktree</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-light text-dark py-5 my-5">
+                    <h1 class="display-3 text-center">Registration Form</h1>
+                    <form class="row g-4 mx-5" enctype="multipart/form-data" action="workshop.php" method="post">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
+                        <div class="col-12">
+                            <label for="name" class="form-label">Full name</label>
+                            <input type="text" class="form-control" required id="name" name="name">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="gender" id="male" value="male">
+                                <label class="form-check-label" for="id">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="gender" id="female" value="female">
+                                <label class="form-check-label" for="id">Female</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" required id="dob" name="dob" placeholder="2000-01-01" min="1920-01-01" max="2021-01-01">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" required id="email" name="email" placeholder="name@mail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input type="tel" class="form-control" required id="phone" name="phone" minlength="6" maxlength="16" placeholder="+620000000000">
+                        </div>
+                        <div class="col-12">
+                            <label for="institution" class="form-label">Institution/Public</label>
+                            <input type="text" class="form-control" required id="institution" name="institution" placeholder="High School / University / Public">
+                        </div>
+                        <div class="col-12">
+                            <label for="talkfile" class="form-label">Proof of Payment</label>
+                            <input class="form-control" type="file" required id="talkfile" name="payment">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="paymethod" id="bni" value="bni">
+                                <label class="form-check-label" for="bni">BNI</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="paymethod" id="mandiri" value="mandiri">
+                                <label class="form-check-label" for="mandiri">Mandiri</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" required name="paymethod" id="ovo" value="ovo">
+                                <label class="form-check-label" for="ovo">OVO</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark" value="Upload">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light py-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-end">
+                    <p class="display-4 mb-1">Questions?</p>
+                    <p class="fs-1">Please<br>Contact Us</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 text-start" style="color:#f4d78a">
+                    <p class="display-6">WhatsApp</p>
+                    <p>081293934283 (Nabila)<br></p>
+                    <p>087898502471 (Natasha)</p>
+                    <p class="display-6">LINE</p>
+                    <p>POISE UGM: @poise.ugm.2021</p>
+                </div>
             </div>
         </div>
         <div class="container-fluid bg-dark text-light pt-5" id="footer">
             <div class="row py-5 ">
                 <div class="col-md-1">
-                    <img src="../../images/poiselogo.webp" class="img-fluid" alt="POISE">
+                    <img src="../../images/poiselogo.svg" class="img-fluid" alt="POISE">
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-7">
@@ -83,24 +462,24 @@
                     <div class="row mb-4">
                         <div class="col-3">
                             <a href="https://web.facebook.com/poisekmtkugm">
-                                <img src="../../images/fb.webp" class="img-fluid" alt="FB">
+                                <img src="../../images/fb.svg" class="img-fluid" alt="FB">
                             </a>
                         </div>
                         <div class="col-3">
                             <a href="https://www.instagram.com/poise.ugm/">
-                                <img src="../../images/ig.webp" class="img-fluid" alt="IG">
+                                <img src="../../images/ig.svg" class="img-fluid" alt="IG">
                             </a>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-3">
                             <a href="https://line.me/R/ti/p/%40poiseugm2021">
-                                <img src="../../images/line.webp" class="img-fluid" alt="LINE">
+                                <img src="../../images/line.svg" class="img-fluid" alt="LINE">
                             </a>
                         </div>
                         <div class="col-3">
                             <a href="https://twitter.com/POISEUGM">
-                                <img src="../../images/twitter.webp" class="img-fluid" alt="Twitter">
+                                <img src="../../images/twitter.svg" class="img-fluid" alt="Twitter">
                             </a>
                         </div>
                     </div>
