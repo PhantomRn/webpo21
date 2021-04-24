@@ -20,7 +20,6 @@ if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
 } else {
     $upconfirm = 0;
 }
-$upfilename = $_FILES['payment']['name]'];
 
 $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
@@ -51,7 +50,7 @@ if ($idnum < 10) {
 */
 
 $stmt = $mysqli->prepare("INSERT INTO workshop (name, email, dob, gender, phone, institution, paymethod, filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_POST['paymethod'], $upfilename);
+$stmt->bind_param("ssssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_POST['paymethod'], $_FILES['payment']['name']);
 $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
