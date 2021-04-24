@@ -18,7 +18,7 @@ $webinar5 = 0;
 $dbconfirm = 0;
 $upconfirm = 0;
 
-$uploaddir = '../../../uploads/poisetalks/webinar/';
+$uploaddir = '../../../../uploads/poisetalks/webinar/';
 $uploadfile = $uploaddir . basename($_FILES['twib']['name']);
 if (move_uploaded_file($_FILES['twib']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
@@ -36,7 +36,7 @@ $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
-  $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "poiq2362_poisetalks", 3306);
+  $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "poiq2362_form_dev", 3306);
   $mysqli->set_charset("utf8mb4");
   $dbconfirm = 1;
 } catch(Exception $e) {
