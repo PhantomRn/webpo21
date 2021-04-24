@@ -13,8 +13,12 @@ require '../../frameworks/php/PHPMailer/src/SMTP.php';
 $dbconfirm = 0;
 $upconfirm = 0;
 
+date_default_timezone_set('Asia/Jakarta');
 $uploaddir = '../../../uploads/poisetalks/workshop/';
-$nameformat = date('Y-m-d') . '_' . basename($_FILES['payment']['name']);
+$curdate = date('Y-m-d');
+$das = '-';
+$filedate = $curdate . $das;
+$nameformat = $curdate . basename($_FILES['payment']['name']);
 $uploadfile = $uploaddir . $nameformat;
 if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
