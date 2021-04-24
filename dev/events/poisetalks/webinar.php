@@ -15,6 +15,8 @@ $webinar2 = 0;
 $webinar3 = 0;
 $webinar4 = 0;
 $webinar5 = 0;
+$dbconfirm = 0;
+$upconfirm = 0;
 
 $uploaddir = '../../../../uploads/poisetalks/webinar/';
 $uploadfile = $uploaddir . basename($_FILES['twib']['name']);
@@ -30,9 +32,6 @@ $webinar3 = $_POST['webinar3'];
 $webinar4 = $_POST['webinar4'];
 $webinar5 = $_POST['webinar5'];
 
-
-$dbconfirm = 0;
-$upconfirm = 0;
 $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
