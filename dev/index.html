@@ -1,236 +1,273 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Untitled</title>
-        <meta name="description" content="POISE (Process Engineering Series of Events)">
+        <title>POISE UGM 2021</title>
+        <meta name="description" content="Process Engineering Series of Events">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="images/favicon.webp" type="image/webp">
-        <link rel="stylesheet" href="styles/home.css">
+        <link rel="icon" sizes="16x16 32x32" href="images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="images/favicon-152.png">
+        <meta name="msapplication-TileColor" content="#181825">
+        <meta name="msapplication-TileImage" content="images/favicon-144.png">
+        <link rel="stylesheet" href="styles/style.min.css">
+        <script src="scripts/bootstrap.bundle.min.js"></script>
     </head>
-    <body class="has-navbar-fixed-top">
-        <nav class="navbar is-dark is-fixed-top" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    <img src="images/poiselogo.webp" alt="POISE">
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="height: auto !important">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/brandicon.svg" class="img-fluid" style="height:48px">
                 </a>
-                <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarDrop">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </div>
-            </div>
-            <div class="navbar-menu" id="navbarDrop">
-                <div class="navbar-start">
-                </div>
-                <div class="navbar-end">
-                    <a class="navbar-item is-active" href="https://poiseugm.net/">
-                        Home
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            Events
-                        </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/gts">
-                                GTS
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-dar kd-flex justify-content-end"  id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
                             </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/poisetalks">
-                                POISETalks
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="events/gts">GTS</a></li>
+                                <li><a class="dropdown-item" href="events/poisetalks">POISETalks</a></li>
+                                <li><a class="dropdown-item" href="events/poisechats">POISEChats</a></li>
+                                <li><a class="dropdown-item" href="events/charity">Charity</a></li>
+                                <li><a class="dropdown-item" href="events/wafers">WAFERS</a></li>
+                                <li><a class="dropdown-item" href="events/summit">Summit</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Competition
                             </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/poisechats">
-                                POISEChats
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/charity">
-                                Charity
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/wafers">
-                                WAFERS
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/events/summit">
-                                Summit
-                            </a>
-                        </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            Competition
-                        </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/phase">
-                                PHASE
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/psico">
-                                PSICO
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/safecom">
-                                SAFECOM
-                            </a>
-                            <a class="navbar-item has-text-dark" href="https://poiseugm.net/competition/catalyst">
-                                CATALYST
-                            </a>
-                        </div>
-                    </div>
-                    <a class="navbar-item" href="#footer">
-                        Contact
-                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="competition/phase">PHASE</a></li>
+                                <li><a class="dropdown-item" href="competition/psico">PSICO</a></li>
+                                <li><a class="dropdown-item" href="competition/safecom">SAFECOM</a></li>
+                                <li><a class="dropdown-item" href="competition/catalyst">CATALYST</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <section class="section">
-            <form action="form.php" method="POST">
-                <div class="field">
-                    <label class="label">Full name</label>
-                    <div class="control">
-                        <input class="input" type="text" name="name" placeholder="Name">
-                    </div>
+        <div class="px-4 py-5 text-center vh-100" style=" background-image: url('images/hero.webp');">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="display-3">POISE UGM</h1>
+                <div class="mx-auto">
+                    <h5 class="fs-4">Process Engineering Series of Events</h4>
                 </div>
-
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" name="email" placeholder="user@mail.com">
-                    </div>
+                <h1 class="display-3">2021</h1>
+            </div>
+        </div>
+        <div class="container-fluid px-4 py-5 bg-dark text-light">
+            <div class="row flex-lg-row align-items-center g-5">
+                <div class="col-md-3 offset-md-2">
+                    <img src="images/poiselogo.svg" class="img-fluid w-75" alt="Logo Poise" >
                 </div>
-
-                <div class="field">
-                    <label class="label">Date of Birth</label>
-                    <div class="control">
-                        <input class="input" type="date" name="dob" min="1950-01-01" max="2015-01-01" placeholder="2000-01-01">
-                    </div>
+                <div class="col-md-5">
+                    <h1 class="display-5">About</h1>
+                    <h1 class="display-5" style="color:#eab41f">POISE UGM</h1>
+                    <p class="fs-6">Process Engineering Series of Events or POISE is an international annual event held by Keluarga Mahasiswa Teknik Kimia (KMTK) Universitas Gadjah Mada. POISE is a combination of previous events in KMTK, Safecom and PIT. Safecom was meant to build awareness about the importance of safety, while PIT was meant to raise issues in the world of petrochemical, geothermal, oil, and gas. POISE is a platform for future leaders to compete in developing creative and innovative ideas and hone critical thinking to answer sustainable problems.</p>
                 </div>
-
-                <div class="field">
-                    <label class="label">Gender</label>
-                    <div class="control">
-                        <label class="radio">
-                            <input type="radio" name="gender" value="male">
-                            Male
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="gender" value="female">
-                            Female
-                        </label>
-                    </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light text-dark text-center">
+            <h1 class="display-3 my-5">POISE UGM 2021</h1>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <img src="images/sect0bg.svg" class="img-fluid" alt="4 Competitions & 6 Events">
                 </div>
-
-                <div class="field">
-                    <label class="label">Phone Number</label>
-                    <div class="control">
-                        <input class="input" type="tel" name="phone" placeholder="+620000000">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Institution</label>
-                    <div class="control">
-                        <input class="input" type="text" name="institution" placeholder="High School/University">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Webinar Selection</label>
-                    <div class="control">
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar1" value="w1">
-                            Webinar 1
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar2" value="w2">
-                            Webinar 2
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar3" value="w3">
-                            Webinar 3
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="webinar4" value="w4">
-                            Webinar 4
-                        </label>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Twibbon</label>
-                    <div class="file">
-                        <label class="file-label">
-                            <input class="file-input" type="file" name="resume">
-                            <span class="file-cta">
-                                <span class="file-icon">
-                                    <i class="fas fa-upload"></i>
-                                </span>
-                                <span class="file-label">
-                                    Choose a file…
-                                </span>
-                            </span>
-                        </label>
-                    </div>
-                    <div class="field">
-                        <div class="control">
-                            <input type="submit" name="submit" class="button is-primary">
+            </div>
+            <h3 class="display-5 mt-3">Grand Theme</h3>
+            <h5 class="fs-4 mb-5">Enhancing Professional Youth Towards Safe and <br> Green Industry Culture for Sustainable Future</h5>
+        </div>
+        <div class="container-fluid bg-dark py-3">
+            <h1 class="fs-1 my-4 text-light text-center">Competitions</h1>
+            <div class="row gx-5 gy-3 my-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="row align-items-center m-4">
+                            <div class="col-4">
+                                <img src="images/phase.svg" class="img-fluid" alt="phase">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="fw-bold"><em>PHASE</em></h4>
+                                <p> Poster Challenger for Decent Engineer <br><br></p>
+                                <a class="btn btn-dark" href="competition/phase">See more &#10148;</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
-        </section>
-
-        <footer class="footer has-background-dark" id="footer">
-            <div class="columns is-vcentered">
-                <div class="column is-2">
-                    <figure class="image is-128x128">
-                        <img src="images/poiselogo.webp" alt="POISE">
-                    </figure>
+                <div class="col-1"></div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="row align-items-center m-4">
+                            <div class="col-4">
+                                <img src="images/psico.svg" class="img-fluid" alt="psico">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="fw-bold"><em>PSICO</em></h4>
+                                <p>Process Simulation Competition<br><br><br></p>
+                                <a class="btn btn-dark" href="competition/psico">See more &#10148;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-7">
-                    <p class="has-text-light has-text-weight-medium">
+            </div>
+            <div class="row gx-5 gy-3 my-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="row align-items-center m-4">
+                            <div class="col-4">
+                                <img src="images/safecom.svg" class="img-fluid" alt="safecom">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="fw-bold"><em>SAFECOM</em></h4>
+                                <p>Safety Competition<br><br><br></p>
+                                <a class="btn btn-dark" href="competition/safecom">See more &#10148;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="row align-items-center m-4">
+                            <div class="col-4">
+                                <img src="images/catalyst.svg" class="img-fluid" alt="catalyst">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="fw-bold"><em>CATALYST</em></h4>
+                                <p>Chemical Engineering Challenge on<br>Applied Science and Mathematics<br><br></p>
+                                <a class="btn btn-dark" href="competition/catalyst">See more &#10148;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light py-3">
+            <h1 class="fs-1 my-4 text-dark text-center">Events</h1>
+            <div class="row gx-5 gy-3 my-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="card bg-dark">
+                        <div class="text-center text-light m-3">
+                            <img src="images/gts.svg" class="w-50 mb-2" alt="Goes to School">
+                            <h4 class="fw-bold"><em>GTS</em></h4>
+                            <p>Goes To School</p>
+                            <a class="btn btn-light" href="events/gts">See more &#10148;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-auto"></div>
+                <div class="col-md-3">
+                    <div class="card bg-dark">
+                        <div class="text-center text-light m-3">
+                            <img src="images/talks.svg" class="w-50 mb-2" alt="POISETalks">
+                            <h4 class="fw-bold"><em>POISETalks</em></h4>
+                            <p>POISE Webinar Series</p>
+                            <a class="btn btn-light" href="events/poisetalks">See more &#10148;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-auto"></div>
+                <div class="col-md-3">
+                    <div class="card bg-dark">
+                        <div class="text-center text-light m-3">
+                            <img src="images/chats.svg" class="w-50 mb-2" alt="POISEChats">
+                            <h4 class="fw-bold"><em>POISEChats</em></h4>
+                            <p>POISE Series of Podcasts</p>
+                            <a class="btn btn-light" href="events/poisechats">See more &#10148;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 gy-3 my-5 justify-content-center">
+                <div class="col-md-3">
+                    <div class="card bg-dark">
+                        <div class="text-center text-light m-3">
+                            <img src="images/charity.svg" class="w-50 mb-2" alt="Charity">
+                            <h4 class="fw-bold"><em>Charity</em></h4>
+                            <p>POISE Humanitarian Effort</p>
+                            <a class="btn btn-light" href="events/charity">See more &#10148;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-auto"></div>
+                <div class="col-md-3">
+                    <div class="card bg-dark">
+                        <div class="text-center text-light m-3">
+                            <img src="images/wafers.svg" class="w-50 mb-2" alt="Summer Course">
+                            <h4 class="fw-bold"><em>WAFERS</em></h4>
+                            <p>Summer Course</p>
+                            <a class="btn btn-light" href="events/wafers">See more &#10148;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-auto"></div>
+                <div class="col-md-3">
+                    <div class="card bg-dark">
+                        <div class="text-center text-light m-3">
+                            <img src="images/summit.svg" class="w-50 mb-2" alt="Summit">
+                            <h4 class="fw-bold"><em>Summit</em></h4>
+                            <p>POISE Closing Ceremony</p>
+                            <a class="btn btn-light" href="events/summit">See more &#10148;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light pt-5" id="footer">
+            <div class="row py-5 ">
+                <div class="col-md-1">
+                    <img src="images/poiselogo.svg" class="img-fluid w-75" alt="POISE">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <p>
                         Departemen Teknik Kimia FT UGM
-                    </p>
-                    <p class="has-text-light has-text-weight-light">
+                        <br>
                         Jl. Grafika no.2, Kabupaten Sleman, DIY. 55281
-                        <br>
-                        <br>
+                        <br><br>
                         E-mail: poise.ugm@gmail.com
                     </p>
                 </div>
-                <div class="column">
-                    <p class="is-size-3 has-text-light has-text-weight-bold">
-                        Keep in Touch
-                    </p>
-                    <div class="columns">
-                        <div class="column is-3">
+                <div class="col-md-3">
+                    <h3 class="fw-bold"> Keep in Touch</h3>
+                    <div class="row mb-4">
+                        <div class="col-3">
                             <a href="https://web.facebook.com/poisekmtkugm">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/fb.webp" alt="Facebook">
-                                </figure>
+                                <img src="images/fb.svg" class="img-fluid" alt="FB">
                             </a>
                         </div>
-                        <div class="column is-3">
+                        <div class="col-3">
                             <a href="https://www.instagram.com/poise.ugm/">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/ig.webp" alt="Instagram">
-                                </figure>
+                                <img src="images/ig.svg" class="img-fluid" alt="IG">
                             </a>
                         </div>
                     </div>
-                    <div class="columns">
-                        <div class="column is-3">
+                    <div class="row mt-4">
+                        <div class="col-3">
                             <a href="https://line.me/R/ti/p/%40poiseugm2021">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/line.webp" alt="LINE">
-                                </figure>
+                                <img src="images/line.svg" class="img-fluid" alt="LINE">
                             </a>
                         </div>
-                        <div class="column is-3">
+                        <div class="col-3">
                             <a href="https://twitter.com/POISEUGM">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="images/twitter.webp" alt="Twitter">
-                                </figure>
+                                <img src="images/twitter.svg" class="img-fluid" alt="Twitter">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </body>
 </html>
