@@ -175,6 +175,7 @@
                             <li>BNI : 0831990558 (<b>Dani Intan Kumala</b>)</li>
                             <li>Mandiri : 1370018116935 (<b>Aqiela Mahannada</b>)</li>
                             <li>Gopay : 085743761135 (<b>Zahratul Khasanah</b>)</li>
+                            <li>PayPal : paypal.me/Zahratulkh (<b>Zahratul Khasanah</b>)
                             <li>Wstern Union: Address: Ponowaren, Nogotirto, Gamping, Selman, Yogyakarta, Indonesia, Postal Code: 55592 (<b>Dani Intan Kumala</b>)
                         </ul>
                     </p>
@@ -243,32 +244,54 @@
                         <input type="email" class="form-control" required id="email" name="email" placeholder="name@mail.com">
                     </div>
                     <div class="col-md-6">
-                        <label for="mname1" class="form-label">Member name</label>
+                        <label for="mname1" class="form-label">Member name (1)</label>
                         <input type="text" class="form-control" required id="mname1" name="mname1">
                     </div>
                     <div class="col-md-6">
-                        <label for="mname2" class="form-label">Member name</label>
+                        <label for="mname2" class="form-label">Member name (2)</label>
                         <input type="text" class="form-control" id="mname2" name="mname2">
                     </div>
                     <div class="col-md-6">
-                        <label for="mmaj1" class="form-label">Major</label>
+                        <label for="mmaj1" class="form-label">Major (1)</label>
                         <input type="text" class="form-control" required id="mmaj1" name="mmaj1">
                     </div>
                     <div class="col-md-6">
-                        <label for="mmaj2" class="form-label">Major</label>
+                        <label for="mmaj2" class="form-label">Major (2)</label>
                         <input type="text" class="form-control" id="mmaj2" name="mmaj2">
                     </div>
                     <div class="col-md-6">
-                        <label for="mbatch1" class="form-label">Batch</label>
+                        <label for="mbatch1" class="form-label">Batch (1)</label>
                         <input type="text" class="form-control" required id="mbatch1" name="mbatch1">
                     </div>
                     <div class="col-md-6">
-                        <label for="mbatch2" class="form-label">Batch</label>
+                        <label for="mbatch2" class="form-label">Batch (2)</label>
                         <input type="text" class="form-control" id="mbatch2" name="mbatch2">
                     </div>
                     <div class="col-12">
                         <label for="psidata" class="form-label">Requirements File (Filename format: Team_Name)</label>
                         <input class="form-control" type="file" required id="psidata" name="psidata">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" required name="payment" id="bni" value="bni">
+                            <label class="form-check-label" for="bni">BNI</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" required name="payment" id="bri" value="bri">
+                            <label class="form-check-label" for="bri">BRI</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" required name="payment" id="ovo" value="ovo">
+                            <label class="form-check-label" for="ovo">OVO</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" required name="payment" id="paypal" value="paypal">
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" required name="payment" id="western_union" value="western_union">
+                            <label class="form-check-label" for="western_union">Western Union</label>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-dark">Submit</button>
                 </form>

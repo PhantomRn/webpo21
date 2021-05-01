@@ -32,8 +32,8 @@ try {
 }
 $mysqli->set_charset("utf8mb4");
 
-$stmt = $mysqli->prepare("INSERT INTO safecom (tname, inst, lname, lmaj, lbatch, phone, email, mname1, mmaj1, mbatch1, mname2, mmaj2, mbatch2, filen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssssssssssss",$_POST['tname'], $_POST['inst'], $_POST['lname'], $_POST['lmaj'], $_POST['lbatch'], $_POST['phone'], $_POST['email'], $_POST['mname1'], $_POST['mmaj1'], $_POST['mbatch1'], $_POST['mname2'], $_POST['mmaj2'], $_POST['mbatch2'], $nameformat);
+$stmt = $mysqli->prepare("INSERT INTO safecom (tname, inst, lname, lmaj, lbatch, phone, email, mname1, mmaj1, mbatch1, mname2, mmaj2, mbatch2, payment, filen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("sssssssssssssss",$_POST['tname'], $_POST['inst'], $_POST['lname'], $_POST['lmaj'], $_POST['lbatch'], $_POST['phone'], $_POST['email'], $_POST['mname1'], $_POST['mmaj1'], $_POST['mbatch1'], $_POST['mname2'], $_POST['mmaj2'], $_POST['mbatch2'], $_POST['payment'], $nameformat);
 $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
