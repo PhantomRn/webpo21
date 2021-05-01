@@ -123,7 +123,7 @@
                     <p class="display-6">c.</p>
                 </div>
                 <div class="col-md-8">
-                    <p>Each participant is limited to register for only one team</p>
+                    <p>Each participant is limited to register for only <em>one team</em></p>
                 </div>
             </div>
             <div class="row my-4 justify-content-center">
@@ -147,7 +147,7 @@
                     <p class="display-6">f.</p>
                 </div>
                 <div class="col-md-8">
-                    <p>For more information, please reach us more: <a href="linktr.ee/poiseugm"> <b>linktr.ee/poiseugm</b> </a></p>
+                    <p>For more information, please reach us more: <a href="linktr.ee/poiseugm"><b>linktr.ee/poiseugm</b></a></p>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                     <p class="display-6">01</p>
                 </div>
                 <div class="col-md-8">
-                    <p>To understand more about PSiCo, please read the information about the Psico <a href="#"> <b> here </b> </a></p>
+                    <p>To understand more about PSiCo, please read the information on the following <a href="https://bit.ly/GuidebookCasePSiCo2021"><b>link</b></a></p>
                 </div>
             </div>
             <div class="row my-4 justify-content-center">
@@ -168,12 +168,14 @@
                 <div class="col-md-8">
                     <p>
                         Fill in the registration form and complete the registration fee
-                        <br>Registration fee: <b>IDR 300.000/Person</b></br>
-                        <br>Account number:</br>
+                        <br>Registration fee: <b>IDR 300.000/Person</b>
+                        <br>Registration fee for international pariticpants: <b>USD 23/Team</b>
+                        <br>Account number:
                         <ul>
                             <li>BNI : 0831990558 (<b>Dani Intan Kumala</b>)</li>
                             <li>Mandiri : 1370018116935 (<b>Aqiela Mahannada</b>)</li>
                             <li>Gopay : 085743761135 (<b>Zahratul Khasanah</b>)</li>
+                            <li>Wstern Union: Address: Ponowaren, Nogotirto, Gamping, Selman, Yogyakarta, Indonesia, Postal Code: 55592 (<b>Dani Intan Kumala</b>)
                         </ul>
                     </p>
                 </div>
@@ -183,7 +185,7 @@
                     <p class="display-6">03</p>
                 </div>
                 <div class="col-md-8">
-                    <p>Post your photo with PSiCo twibbon on your instagram account, twibbon and caption can be accessed from <a href="#">twibbonize</a></p>
+                    <p>Post your photo with PSiCo twibbon on your <b>Instagram</b> account, tag 5 friends and @poise.ugm (POISE UGM 2021). Twibbon and caption can be accessed from <a href="https://twb.nz/psico2021">twibbonize</a> or <a href="https://bit.ly/TwibbonPSiCo2021>here</a>"></p>
                 </div>
             </div>
             <div class="row my-4 justify-content-center">
@@ -191,7 +193,12 @@
                     <p class="display-6">04</p>
                 </div>
                 <div class="col-md-8">
-                    <p>Upload the payment confirmation receipt and screenshot of your instagram post on the registration form</p>
+                    <p>Upload the requirements in <b>one compressed archive (zip or rar)</b> consisting of:</p>
+                    <ol type="a">
+                        <li>Screenshot of twibbon post and story repost</li>
+                        <li>Scan of student identity card</li>
+                        <li>Proof of payment</li>
+                    </ol>
                 </div>
             </div>
             <div class="row my-4 justify-content-center">
@@ -205,7 +212,7 @@
         </div>
         <div class="container-fluid bg-light text-dark py-5 my-5">
             <h1 class="display-3 text-center">Registration Form</h1>
-            <form class="row g-4 mx-5 align-items-center" enctype="multipart/form-data" action="psico.php" method="POST" id="reg">
+            <form class="row g-4 mx-5 align-items-center" enctype="multipart/form-data" action="../../../../phpform/psico.php" method="POST" id="reg">
                     <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
                     <div class="col-12">
                         <label for="tname" class="form-label">Team name</label>
@@ -224,12 +231,12 @@
                         <input type="lmaj" class="form-control" required id="lmaj" name="lmaj">
                     </div>
                     <div class="col-12">
-                        <label for="lbatch" class="form-label">Angkatan</label>
+                        <label for="lbatch" class="form-label">Batch</label>
                         <input type="text" class="form-control" required id="lbatch" name="lbatch">
                     </div>
                     <div class="col-12">
                         <label for="phone" class="form-label">Phone number</label>
-                        <input type="tel" class="form-control" required id="phone" name="phone" minlength="6" maxlength="16" placeholder="+620000000000">
+                        <input type="tel" class="form-control" required id="phone" name="phone" minlength="6" maxlength="16">
                     </div>
                     <div class="col-12">
                         <label for="email" class="form-label">Email</label>
@@ -252,15 +259,15 @@
                         <input type="text" class="form-control" id="mmaj2" name="mmaj2">
                     </div>
                     <div class="col-md-6">
-                        <label for="mbatch1" class="form-label">Angkatan</label>
+                        <label for="mbatch1" class="form-label">Batch</label>
                         <input type="text" class="form-control" required id="mbatch1" name="mbatch1">
                     </div>
                     <div class="col-md-6">
-                        <label for="mbatch2" class="form-label">Angkatan</label>
+                        <label for="mbatch2" class="form-label">Batch</label>
                         <input type="text" class="form-control" id="mbatch2" name="mbatch2">
                     </div>
                     <div class="col-12">
-                        <label for="psidata" class="form-label">Data</label>
+                        <label for="psidata" class="form-label">Requirements File</label>
                         <input class="form-control" type="file" required id="psidata" name="psidata">
                     </div>
                     <button type="submit" class="btn btn-dark">Submit</button>

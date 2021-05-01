@@ -4,3 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/poiq2362/public_html
     - /bin/cp -R deploy $DEPLOYPATH
     - /bin/cp -R dev $DEPLOYPATH
+    - /bin/cp -R dev/phpscript /home/poiq2362

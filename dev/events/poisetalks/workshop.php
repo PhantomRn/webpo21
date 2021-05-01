@@ -14,7 +14,7 @@ $dbconfirm = 0;
 $upconfirm = 0;
 
 date_default_timezone_set('Asia/Jakarta');
-$uploaddir = '../../../uploads/poisetalks/workshop/';
+$uploaddir = '../../../../uploads/poisetalks/workshop/';
 $curdate = date('Y-m-d');
 $tiem = date('H:i:s');
 $un = '_';

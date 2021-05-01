@@ -19,7 +19,7 @@ $dbconfirm = 0;
 $upconfirm = 0;
 
 date_default_timezone_set('Asia/Jakarta');
-$uploaddir = '../../../uploads/poisetalks/webinar/';
+$uploaddir = '../../../../uploads/poisetalks/webinar/';
 $curdate = date('Y-m-d');
 $tiem = date('H:i:s');
 $un = '_';
