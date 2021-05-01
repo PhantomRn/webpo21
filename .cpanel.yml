@@ -1,13 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/poiq2362/public_html
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R styles $DEPLOYPATH
-    - /bin/cp -R scripts $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
-    - /bin/cp -R competition $DEPLOYPATH
-    - /bin/cp -R events $DEPLOYPATH
-    - /bin/cp -R dev $DEPLOYPATH
-    - /bin/cp -R frameworks $DEPLOYPATH
+    - export DEPLOYPATH=/home/poiq2362
+    - /bin/cp -R deploy $DEPLOYPATH/public_html
+    - /bin/cp -R dev $DEPLOYPATH/dev
