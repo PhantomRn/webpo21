@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/poiq2362
-    - /bin/cp -R deploy/* $DEPLOYPATH/public_html
-    - /bin/cp -R dev/* $DEPLOYPATH/dev
+    - export DEPLOYPATH=/home/poiq2362/public_html
+    - /bin/cp -R deploy $DEPLOYPATH
+    - /bin/cp -R dev $DEPLOYPATH
