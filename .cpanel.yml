@@ -11,5 +11,5 @@ deployment:
     - /bin/cp -R scripts $DEPLOYPATH
     - /bin/cp -R scss $DEPLOYPATH
     - /bin/cp -R stlyes $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp phpinfp.php $DEPLOYPATH
+    - /bin/cp ./index.html $DEPLOYPATH
+    - /bin/cp ./phpinfo.php $DEPLOYPATH
