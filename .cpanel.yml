@@ -10,6 +10,6 @@ deployment:
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R scripts $DEPLOYPATH
     - /bin/cp -R scss $DEPLOYPATH
-    - /bin/cp -R stlyes $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
     - /bin/cp ./index.html $DEPLOYPATH
     - /bin/cp ./phpinfo.php $DEPLOYPATH
