@@ -13,8 +13,14 @@ require '../../frameworks/php/PHPMailer/src/SMTP.php';
 $dbconfirm = 0;
 $upconfirm = 0;
 
+date_default_timezone_set('Asia/Jakarta');
 $uploaddir = '../../../../uploads/poisetalks/workshop/';
-$uploadfile = $uploaddir . basename($_FILES['payment']['name']);
+$curdate = date('Y-m-d');
+$tiem = date('H:i:s');
+$un = '_';
+$filedate = $curdate . $un . $tiem;
+$nameformat = $filedate . $un . basename($_FILES['payment']['name']);
+$uploadfile = $uploaddir . $nameformat;
 if (move_uploaded_file($_FILES['payment']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
 } else {
@@ -25,7 +31,7 @@ $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
-  $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "poiq2362_form_dev", 3306);
+  $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "poiq2362_poisetalks", 3306);
   $mysqli->set_charset("utf8mb4");
   $dbconfirm = 1;
 } catch(Exception $e) {
@@ -50,7 +56,7 @@ if ($idnum < 10) {
 */
 
 $stmt = $mysqli->prepare("INSERT INTO workshop (name, email, dob, gender, phone, institution, paymethod, filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_POST['paymethod'], $_FILES['payment']['name']);
+$stmt->bind_param("ssssssss",$_POST['name'], $_POST['email'], $_POST['dob'], $_POST['gender'], $_POST['phone'], $_POST['institution'], $_POST['paymethod'], $nameformat);
 $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
