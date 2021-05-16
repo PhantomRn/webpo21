@@ -51,7 +51,7 @@ foreach ($result as $row) {
             htmlspecialchars($row['email']) . ')<br>';
         //Mark it as sent in the DB
         mysqli_query(
-            $mysql,
+            $mysqli,
             "UPDATE webinart SET sent = TRUE WHERE email = '" . mysqli_real_escape_string($mysqli, $row['email']) . "'"
         );
     } catch (Exception $e) {
