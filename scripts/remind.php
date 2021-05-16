@@ -20,17 +20,16 @@ $mail->Username   = 'notifikasi@poiseugm.net';
 $mail->Password   = '({A=&=32~Kn;a@0$>?};9+I&W}?a\P';
 $mail->SMTPKeepAlive = true;
 $mail->setFrom('notifikasi@poiseugm.net', 'POISE UGM');
-$mail->addAddress($_POST['email'], $_POST['name']);
 $mail->isHTML(true);
 $mail->Subject = 'Notifikasi pendaftaran POISETalks';
-$mail->Body = "";
-$mail->addAttachment('', '');
+$mail->Body = "Lmao";
+$mail->addAttachment('./test.pdf', 'guide.pdf');
 
 $username = "poiq2362_admin";
 $passwd = "Su.}6U46?l%P";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
-  $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "testing", 3306);
+  $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "poiq2362_testing", 3306);
   $mysqli->set_charset("utf8mb4");
 } catch(Exception $e) {
   error_log($e->getMessage());
