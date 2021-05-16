@@ -35,7 +35,7 @@ try {
   error_log($e->getMessage());
 }
 $mysqli->set_charset("utf8mb4");
-$result = msqli_query($mysqli, 'SELECT name, email FROM webinart WHERE sent = FALSE');
+$result = mysqli_query($mysqli, 'SELECT name, email FROM webinart WHERE sent = FALSE');
 
 foreach ($result as $row) {
     try {
