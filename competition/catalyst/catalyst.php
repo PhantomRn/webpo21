@@ -32,7 +32,7 @@ $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
 
-$hostname = $_SERVER['HTTP_HOST'];
+$hostnaem = $_SERVER['HTTP_HOST'];
 $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $suc = 'success.html';
 $fai = 'failed.html';
