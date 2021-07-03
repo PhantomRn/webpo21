@@ -9,15 +9,15 @@ $un = '_';
 $filedate = $curdate . $un . $tiem;
 $nameformat = $filedate . $un . basename($_FILES['catadata']['name']);
 $uploadfile = $uploaddir . $nameformat;
-if (move_uploaded_file($_FILES['catadata']['tmp_nama'], $uploadfile)) {
+if (move_uploaded_file($_FILES['catadata']['tmp_name'], $uploadfile)) {
     $upconfirm = 1;
 } else {
     $upconfirm = 0;
 }
 
 $username = "poiq2362_admin";
-$passw = "Su.}6U46?l%P";
-mysqli_report(MYQSLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$passwd = "Su.}6U46?l%P";
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
   $mysqli = new mysqli("127.0.0.1", "$username", "$passwd", "poiq2362_catalyst", 3306);
   $mysqli->set_charset("utf8mb4");
