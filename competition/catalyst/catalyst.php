@@ -26,8 +26,8 @@ try {
     error_log($e->getMessage());
     $dbconfirm = 0;
 }
-$stmt = $mysqli->prepare("INSERT INTO catalyst (tname, email, lname, lineid, phone, mname1, mname2, inst, filen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssssss",$_POST['tname'], $_POST['email'], $_POST['lname'], $_POST['lineid'], $_POST['phone'], $_POST['mname1'], $_POST['mname2'], $_POST['inst'], $nameformat);
+$stmt = $mysqli->prepare("INSERT INTO catalyst (tname, email, lname, lineid, phone, mname1, mname2, inst, payment, filen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssssssss",$_POST['tname'], $_POST['email'], $_POST['lname'], $_POST['lineid'], $_POST['phone'], $_POST['mname1'], $_POST['mname2'], $_POST['inst'], $_POST['payment'], $nameformat);
 $stmt->execute();
 $idnum = mysqli_insert_id($mysqli);
 $stmt->close();
