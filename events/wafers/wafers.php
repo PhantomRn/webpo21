@@ -21,12 +21,39 @@ try {
     error_log($e->getMessage());
     $dbconfirm = 0;
 }
+$m1 = 0;
+$m2 = 0;
+$m3 = 0;
+$m4 = 0;
+$m5 = 0;
+$m6 = 0;
 
-$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, institution, country) VALUES (?, ?, ?, ?)");
-$stmt->bind_param("ssss",$_POST['name'], $_POST['email'], $_POST['inst'], $_POST['country']);
+$m1 = $_POST['m1'];
+$m2 = $_POST['m2'];
+$m3 = $_POST['m3'];
+$m4 = $_POST['m4'];
+$m5 = $_POST['m5'];
+$m6 = $_POST['m6'];
+
+$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, institution, country, m1, m2, m3, m4, m5, m6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssiiiiii",$_POST['name'], $_POST['email'], $_POST['inst'], $_POST['country'], $m1, $m2, $m3, $m4, $m5, $m6);
 $stmt->execute();
 $stmt->close();
 
+$module_list = "";
+if($m1 == 1):
+    $module_list .= "<li>Sustainable Food Production</li>";
+if($m2 == 1):
+    $module_list .= "<li>Biogas as a Renewable Energy Source</li>";
+if($m3 == 1):
+    $module_list .= "<li>Renewable Energy</li>";
+if($m4 == 1):
+    $module_list .= "<li>Wastewater Treatment</li>";
+if($m5 == 1):
+    $module_list .= "<li>Clean Water Technology</li>";
+if($m6 == 1):
+    $module_list .= "<li>Green Energy Sources</li>";
+    
 $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host       = 'mail.poiseugm.net';
@@ -41,7 +68,7 @@ $mail->isHTML(true);
 $mail->Subject = 'REGISTRATION NOTIFICATION : WAFERS Online Summer Course 2021';
 $mail->addEmbeddedImage('reg.jpg','QR','QR.jpg');
 $recname = $_POST['name'];
-$mail->Body = "Dear $recname,<br><br>Congratulations, you have sucessfully signed up on our following WAFERS 2021 webinars:<ul><li>Sustainable Food Production</li><li>Biogas as a Renewable Energy Source</li><li>Renewable Energy</li><li>Wastewater Treatment</li><li>Clean Water Technology</li><li>Green Energy Sources</li></ul><br>Here is the virtual conference link for the webinars: <img src=\"cid:QR\"><br><br>Please do not share the link. Keep in mind that all the webinars will have same zoom meeting link, register yourself before joining the webinars to make the administration easier.<br><br>We are hoping for you to have such a marvelous experience and gain a better understanding about water, food, and energy.<br><br>Let us know if you have any further questions by contacting:<br>LINE: @poiseugm2021 (POISE UGM)<br>Irene: +628126522350<br>Satya: +6285253813929<br><br>Best regards,<br>WAFERS Online Summer Course 2021";
+$mail->Body = "Dear $recname,<br><br>Congratulations, you have sucessfully signed up on our following WAFERS 2021 webinars:<ul>$module_list</ul><br>Here is the virtual conference link for the webinars: <img src=\"cid:QR\"><br><br>Please do not share the link. Keep in mind that all the webinars will have same zoom meeting link, register yourself before joining the webinars to make the administration easier.<br><br>We are hoping for you to have such a marvelous experience and gain a better understanding about water, food, and energy.<br><br>Let us know if you have any further questions by contacting:<br>LINE: @poiseugm2021 (POISE UGM)<br>Irene: +628126522350<br>Satya: +6285253813929<br><br>Best regards,<br>WAFERS Online Summer Course 2021";
 $mail->send();
 
 $hostnaem  = $_SERVER['HTTP_HOST'];
