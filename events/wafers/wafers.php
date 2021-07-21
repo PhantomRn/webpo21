@@ -47,7 +47,7 @@ $hostnaem  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $suc = 'success.html';
 $fai = 'failed.html';
-if ($dbconfirm == 1 && $upconfirm == 1) {
+if ($dbconfirm == 1) {
     header("Location: https://$hostnaem$uri/$suc");
 } else {
     header("Location: https://$hostnaem$uri/$fai");
