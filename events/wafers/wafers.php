@@ -44,8 +44,8 @@ if(isset($_POST['m6']))
 if(isset($_POST['m7']))
     $m7 = $_POST['m7'];
     
-$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, institution, country, m1, m2, m3, m4, m5, m6, m7) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssiiiiiii",$_POST['name'], $_POST['email'], $_POST['inst'], $_POST['country'], $m1, $m2, $m3, $m4, $m5, $m6, $m7);
+$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, faculty, nim, m1, m2, m3, m4, m5, m6, m7) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssiiiiiii",$_POST['name'], $_POST['email'], $_POST['faculty'], $_POST['nim'], $m1, $m2, $m3, $m4, $m5, $m6, $m7);
 $stmt->execute();
 $stmt->close();
 
