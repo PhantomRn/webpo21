@@ -41,17 +41,17 @@ $stmt->execute();
 $stmt->close();
 
 $module_list = "";
-if($m1 == 1):
+if($m1 == 1)
     $module_list .= "<li>Sustainable Food Production</li>";
-if($m2 == 1):
+if($m2 == 1)
     $module_list .= "<li>Biogas as a Renewable Energy Source</li>";
-if($m3 == 1):
+if($m3 == 1)
     $module_list .= "<li>Renewable Energy</li>";
-if($m4 == 1):
+if($m4 == 1)
     $module_list .= "<li>Wastewater Treatment</li>";
-if($m5 == 1):
+if($m5 == 1)
     $module_list .= "<li>Clean Water Technology</li>";
-if($m6 == 1):
+if($m6 == 1)
     $module_list .= "<li>Green Energy Sources</li>";
     
 $mail = new PHPMailer(true);
