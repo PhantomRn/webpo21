@@ -28,12 +28,18 @@ $m4 = 0;
 $m5 = 0;
 $m6 = 0;
 
-$m1 = $_POST['m1'];
-$m2 = $_POST['m2'];
-$m3 = $_POST['m3'];
-$m4 = $_POST['m4'];
-$m5 = $_POST['m5'];
-$m6 = $_POST['m6'];
+if(isset($_POST['m1']))
+    $m1 = $_POST['m1'];
+if(isset($_POST['m2']))
+    $m2 = $_POST['m2'];
+if(isset($_POST['m3']))
+    $m3 = $_POST['m3'];
+if(isset($_POST['m4']))
+    $m4 = $_POST['m4'];
+if(isset($_POST['m5']))
+    $m5 = $_POST['m5'];
+if(isset($_POST['m6']))
+    $m6 = $_POST['m6'];
 
 $stmt = $mysqli->prepare("INSERT INTO wafers (name, email, institution, country, m1, m2, m3, m4, m5, m6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("ssssiiiiii",$_POST['name'], $_POST['email'], $_POST['inst'], $_POST['country'], $m1, $m2, $m3, $m4, $m5, $m6);
