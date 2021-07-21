@@ -27,6 +27,7 @@ $m3 = 0;
 $m4 = 0;
 $m5 = 0;
 $m6 = 0;
+$m7 = 0;
 
 if(isset($_POST['m1']))
     $m1 = $_POST['m1'];
@@ -40,25 +41,29 @@ if(isset($_POST['m5']))
     $m5 = $_POST['m5'];
 if(isset($_POST['m6']))
     $m6 = $_POST['m6'];
-
-$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, institution, country, m1, m2, m3, m4, m5, m6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssiiiiii",$_POST['name'], $_POST['email'], $_POST['inst'], $_POST['country'], $m1, $m2, $m3, $m4, $m5, $m6);
+if(isset($_POST['m7']))
+    $m7 = $_POST['m7'];
+    
+$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, institution, country, m1, m2, m3, m4, m5, m6, m7) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssiiiiiii",$_POST['name'], $_POST['email'], $_POST['inst'], $_POST['country'], $m1, $m2, $m3, $m4, $m5, $m6, $m7);
 $stmt->execute();
 $stmt->close();
 
 $module_list = "";
 if($m1 == 1)
-    $module_list .= "<li>Sustainable Food Production</li>";
+    $module_list .= "<li>Sustainable Food Production [<b>July 23, 2021</b>: 13.00 - 17.30 (GMT+7)]</li>";
 if($m2 == 1)
-    $module_list .= "<li>Biogas as a Renewable Energy Source</li>";
+    $module_list .= "<li>Biogas as a Renewable Energy Source [<b>July 26, 2021</b>: 13.00 - 16.00 (GMT+7)]</li>";
 if($m3 == 1)
-    $module_list .= "<li>Renewable Energy</li>";
+    $module_list .= "<li>Renewable Energy [<b>July 27, 2021</b>: 13.00 - 16.00 (GMT+7)]</li>";
 if($m4 == 1)
-    $module_list .= "<li>Wastewater Treatment</li>";
+    $module_list .= "<li>Wastewater Treatment [<b>July 28, 2021</b>: 13.00 - 16.00 (GMT+7)]</li>";
 if($m5 == 1)
-    $module_list .= "<li>Clean Water Technology</li>";
+    $module_list .= "<li>Clean Water Technology [<b>July 29, 2021</b>: 13.00 - 16.00  (GMT+7)]</li>";
 if($m6 == 1)
-    $module_list .= "<li>Green Energy Sources</li>";
+    $module_list .= "<li>Green Energy Sources [<b>August 2, 2021</b>: 13.00 - 17.30 (GMT+7)]</li>";
+if($m7 == 1)
+    $module_list .= "<li>IBASC Miniclass Anaerobic Digestion Research [<b>August 3, 2021</b>: 13.00 - 17.30 (GMT+7)]</li>";
     
 $mail = new PHPMailer(true);
 $mail->isSMTP();
