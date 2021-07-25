@@ -27,7 +27,7 @@ $m3 = 0;
 $m4 = 0;
 $m5 = 0;
 $m6 = 0;
-$m7 = 0;
+// $m7 = 0;
 
 if(isset($_POST['m1']))
     $m1 = $_POST['m1'];
@@ -41,11 +41,11 @@ if(isset($_POST['m5']))
     $m5 = $_POST['m5'];
 if(isset($_POST['m6']))
     $m6 = $_POST['m6'];
-if(isset($_POST['m7']))
-    $m7 = $_POST['m7'];
+// if(isset($_POST['m7']))
+//     $m7 = $_POST['m7'];
     
-$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, faculty, nim, m1, m2, m3, m4, m5, m6, m7) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssiiiiiii",$_POST['name'], $_POST['email'], $_POST['faculty'], $_POST['nim'], $m1, $m2, $m3, $m4, $m5, $m6, $m7);
+$stmt = $mysqli->prepare("INSERT INTO wafers (name, email, faculty, nim, m1, m2, m3, m4, m5, m6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssiiiiii",$_POST['name'], $_POST['email'], $_POST['faculty'], $_POST['nim'], $m1, $m2, $m3, $m4, $m5, $m6);
 $stmt->execute();
 $stmt->close();
 
@@ -62,8 +62,8 @@ if($m5 == 1)
     $module_list .= "<li>Clean Water Technology [<b>July 29, 2021</b>: 13.00 - 16.00  (GMT+7)]</li>";
 if($m6 == 1)
     $module_list .= "<li>Green Energy Sources [<b>August 2, 2021</b>: 13.00 - 17.30 (GMT+7)]</li>";
-if($m7 == 1)
-    $module_list .= "<li>IBASC Miniclass Anaerobic Digestion Research [<b>August 3, 2021</b>: 13.00 - 17.30 (GMT+7)]</li>";
+// if($m7 == 1)
+//     $module_list .= "<li>IBASC Miniclass Anaerobic Digestion Research [<b>August 3, 2021</b>: 13.00 - 17.30 (GMT+7)]</li>";
     
 $mail = new PHPMailer(true);
 $mail->isSMTP();
